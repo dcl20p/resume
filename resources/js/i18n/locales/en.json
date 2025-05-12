@@ -1,157 +1,162 @@
 {
-  "site": {
-    "name": "Cyan Resume"
-  },
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "hero": {
-    "greeting": "Hi, I'm",
-    "name": "John Doe",
-    "title": "Full Stack Developer",
-    "description": "A passionate developer with a love for technology and creativity. Always seeking new challenges to grow.",
-    "download_cv": "Download CV",
-    "contact_me": "Contact Me"
-  },
-  "about": {
-    "title": "About",
-    "description": "I am a Full Stack Developer with over 5 years of experience in web development. I am passionate about creating modern, efficient, and user-friendly web applications.",
-    "skills": "Skills",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "tools": "Tools",
-    "languages": "Languages",
-    "vi": "Vietnamese",
-    "en": "English",
-    "who": "Who am I?",
-    "download": "Download CV",
-    "stats": "Statistics",
-    "years": "Years Experience",
-    "projects": "Projects Completed",
-    "clients": "Happy Clients",
-    "database": "Database Management",
-    "careerObjective": "Career Objective",
-    "careerObjectiveText": "My name is Thieu Sy Tung, and I am 29 years old. I have 5 years of experience in PHP development, and I aspire to apply my knowledge to become a professional PHP developer. My goal is to create high-quality products that generate greater value for the company and contribute to my personal growth.",
-    "personalInfo": "Personal Information",
-    "name": "Full Name",
-    "email": "Email",
-    "phone": "Phone",
-    "location": "Location",
-    "locationValue": "Go Vap District, Ho Chi Minh City, Vietnam",
-    "careerGoals": "Career Goals",
-    "careerGoalsDescription": "As a dedicated developer, I aim to continuously grow and contribute to the tech community. Here are my key career objectives:",
-    "careerGoal1": "Become a Technical Lead and mentor junior developers",
-    "careerGoal2": "Master advanced technologies and contribute to open-source projects",
-    "careerGoal3": "Build innovative solutions that make a positive impact",
-    "interests": "Interests",
-    "interest1": "Programming",
-    "interest2": "Reading",
-    "interest3": "Coffee",
-    "interest4": "Music"
-  },
-  "experience": {
-    "title": "Work Experience",
-    "title1": "Senior Full Stack Developer",
-    "title2": "Full Stack Developer",
-    "description1": "Leading the development of enterprise applications using React and Node.js",
-    "description2": "Developing and maintaining multiple client projects",
-    "responsibilities": "Key Responsibilities",
-    "responsibility1": "Design and develop scalable web applications",
-    "responsibility2": "Mentor junior developers and review code",
-    "responsibility3": "Implement CI/CD and automated testing",
-    "responsibility4": "Build responsive web applications using Vue.js and Laravel",
-    "responsibility5": "Optimize database queries and improve application performance",
-    "responsibility6": "Collaborate with designers to improve UI/UX",
-    "technologies": "Technologies Used"
-  },
-  "education": {
-    "title": "Education",
-    "subtitle": "My Learning Journey",
-    "degree": "Degree",
-    "university": "University",
-    "period": "Period",
-    "description": "Description",
-    "degree1": "Bachelor of Information Technology",
-    "school1": "University of Information Technology - VNU-HCM",
-    "period1": "2015 - 2019",
-    "description1": "Major in Software Engineering. Graduated with Distinction, GPA 8.5/10. Participated in various scientific research projects and programming competitions.",
-    "degree2": "Master of Computer Science",
-    "school2": "University of Science - VNU-HCM",
-    "period2": "2019 - 2021",
-    "description2": "Major in Artificial Intelligence. Research focus on Machine Learning and Deep Learning. Thesis on AI applications in big data analysis.",
-    "achievements": "Achievements",
-    "achievement1": "First Prize in University Programming Competition",
-    "achievement2": "Full Scholarship for 4 years of study",
-    "achievement3": "Participated and won prizes in hackathon competitions",
-    "achievement4": "AWS Certified Solutions Architect",
-    "achievement5": "Published scientific paper on Machine Learning",
-    "achievement6": "Participated and won prizes in AI Challenge",
-    "education1": {
-      "degree": "Bachelor of Information Technology",
-      "university": "University of Information Technology - VNU-HCM",
-      "period": "2015 - 2019",
-      "description": "Major in Software Engineering. Graduated with Distinction, GPA 8.5/10. Participated in various scientific research projects and programming competitions."
-    },
-    "education2": {
-      "degree": "Master of Computer Science",
-      "university": "University of Science - VNU-HCM",
-      "period": "2019 - 2021",
-      "description": "Major in Artificial Intelligence. Research focus on Machine Learning and Deep Learning. Thesis on AI applications in big data analysis."
-    }
-  },
-  "skills": {
-    "title": "Skills",
-    "frontend": "Frontend Development",
-    "backend": "Backend Development",
-    "database": "Database Management",
-    "tools": "Development Tools"
-  },
-  "projects": {
-    "title": "Projects",
-    "view_code": "View Code",
-    "view_project": "View Project",
-    "project1": {
-      "title": "E-commerce Platform",
-      "description": "A full-featured e-commerce platform with payment processing, order management, and data analytics."
-    },
-    "project2": {
-      "title": "Task Management System",
-      "description": "A comprehensive task management system with features for task assignment, progress tracking, and reporting."
-    },
-    "project3": {
-      "title": "Social Media Dashboard",
-      "description": "A social media management dashboard with analytics, post scheduling, and engagement tracking features."
-    }
-  },
-  "contact": {
-    "title": "Contact",
-    "get_in_touch": "Get in Touch",
-    "send_message": "Send Message",
-    "name": "Name",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message",
-    "send": "Send",
-    "success": "Message sent successfully!",
-    "email_label": "Email",
-    "phone_label": "Phone",
-    "location_label": "Location",
-    "location_value": "Hanoi, Vietnam"
-  },
-  "footer": {
-    "title": "Cyan Resume",
-    "description": "A passionate developer with a love for technology and creativity. Always seeking new challenges to grow.",
-    "quick_links": "Quick Links",
-    "follow": "Follow",
-    "rights": "All rights reserved.",
-    "social": {
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "email": "Email"
-    }
-  }
-} 
+	"site": {
+		"name": "Cyan Resume"
+	},
+	"nav": {
+		"home": "Home",
+		"about": "About",
+		"experience": "Experience",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
+	"hero": {
+		"greeting": "Hi, I'm",
+		"name": "Your Name",
+		"title": "Full Stack Developer",
+		"description": "I'm a passionate developer with expertise in building modern web applications.",
+		"download_cv": "Download CV",
+		"download_cv_en": "English CV",
+		"download_cv_vi": "Vietnamese CV",
+		"contact_me": "Contact Me",
+		"downloading": "Downloading...",
+		"download_success": "CV downloaded successfully!",
+		"download_error": "Failed to download CV. Please try again later."
+	},
+	"about": {
+		"title": "About",
+		"description": "I am a Full Stack Developer with over 5 years of experience in web development. I am passionate about creating modern, efficient, and user-friendly web applications.",
+		"skills": "Skills",
+		"frontend": "Frontend",
+		"backend": "Backend",
+		"tools": "Tools",
+		"languages": "Languages",
+		"vi": "Vietnamese",
+		"en": "English",
+		"who": "Who am I?",
+		"download": "Download CV",
+		"stats": "Statistics",
+		"years": "Years Experience",
+		"projects": "Projects Completed",
+		"clients": "Happy Clients",
+		"database": "Database Management",
+		"careerObjective": "Career Objective",
+		"careerObjectiveText": "My name is Thieu Sy Tung, and I am 29 years old. I have 5 years of experience in PHP development, and I aspire to apply my knowledge to become a professional PHP developer. My goal is to create high-quality products that generate greater value for the company and contribute to my personal growth.",
+		"personalInfo": "Personal Information",
+		"name": "Full Name",
+		"email": "Email",
+		"phone": "Phone",
+		"location": "Location",
+		"locationValue": "Go Vap District, Ho Chi Minh City, Vietnam",
+		"careerGoals": "Career Goals",
+		"careerGoalsDescription": "As a dedicated developer, I aim to continuously grow and contribute to the tech community. Here are my key career objectives:",
+		"careerGoal1": "Become a Technical Lead and mentor junior developers",
+		"careerGoal2": "Master advanced technologies and contribute to open-source projects",
+		"careerGoal3": "Build innovative solutions that make a positive impact",
+		"interests": "Interests",
+		"interest1": "Programming",
+		"interest2": "Reading",
+		"interest3": "Coffee",
+		"interest4": "Music"
+	},
+	"experience": {
+		"title": "Work Experience",
+		"title1": "Senior Full Stack Developer",
+		"title2": "Full Stack Developer",
+		"description1": "Leading the development of enterprise applications using React and Node.js",
+		"description2": "Developing and maintaining multiple client projects",
+		"responsibilities": "Key Responsibilities",
+		"responsibility1": "Design and develop scalable web applications",
+		"responsibility2": "Mentor junior developers and review code",
+		"responsibility3": "Implement CI/CD and automated testing",
+		"responsibility4": "Build responsive web applications using Vue.js and Laravel",
+		"responsibility5": "Optimize database queries and improve application performance",
+		"responsibility6": "Collaborate with designers to improve UI/UX",
+		"technologies": "Technologies Used"
+	},
+	"education": {
+		"title": "Education",
+		"subtitle": "My Learning Journey",
+		"degree": "Degree",
+		"university": "University",
+		"period": "Period",
+		"description": "Description",
+		"degree1": "Bachelor of Information Technology",
+		"school1": "University of Information Technology - VNU-HCM",
+		"period1": "2015 - 2019",
+		"description1": "Major in Software Engineering. Graduated with Distinction, GPA 8.5/10. Participated in various scientific research projects and programming competitions.",
+		"degree2": "Master of Computer Science",
+		"school2": "University of Science - VNU-HCM",
+		"period2": "2019 - 2021",
+		"description2": "Major in Artificial Intelligence. Research focus on Machine Learning and Deep Learning. Thesis on AI applications in big data analysis.",
+		"achievements": "Achievements",
+		"achievement1": "First Prize in University Programming Competition",
+		"achievement2": "Full Scholarship for 4 years of study",
+		"achievement3": "Participated and won prizes in hackathon competitions",
+		"achievement4": "AWS Certified Solutions Architect",
+		"achievement5": "Published scientific paper on Machine Learning",
+		"achievement6": "Participated and won prizes in AI Challenge",
+		"education1": {
+			"degree": "Bachelor of Information Technology",
+			"university": "University of Information Technology - VNU-HCM",
+			"period": "2015 - 2019",
+			"description": "Major in Software Engineering. Graduated with Distinction, GPA 8.5/10. Participated in various scientific research projects and programming competitions."
+		},
+		"education2": {
+			"degree": "Master of Computer Science",
+			"university": "University of Science - VNU-HCM",
+			"period": "2019 - 2021",
+			"description": "Major in Artificial Intelligence. Research focus on Machine Learning and Deep Learning. Thesis on AI applications in big data analysis."
+		}
+	},
+	"skills": {
+		"title": "Skills",
+		"frontend": "Frontend Development",
+		"backend": "Backend Development",
+		"database": "Database Management",
+		"tools": "Development Tools"
+	},
+	"projects": {
+		"title": "Projects",
+		"view_code": "View Code",
+		"view_project": "View Project",
+		"project1": {
+			"title": "E-commerce Platform",
+			"description": "A full-featured e-commerce platform with payment processing, order management, and data analytics."
+		},
+		"project2": {
+			"title": "Task Management System",
+			"description": "A comprehensive task management system with features for task assignment, progress tracking, and reporting."
+		},
+		"project3": {
+			"title": "Social Media Dashboard",
+			"description": "A social media management dashboard with analytics, post scheduling, and engagement tracking features."
+		}
+	},
+	"contact": {
+		"title": "Contact",
+		"get_in_touch": "Get in Touch",
+		"send_message": "Send Message",
+		"name": "Name",
+		"email": "Email",
+		"subject": "Subject",
+		"message": "Message",
+		"send": "Send",
+		"success": "Message sent successfully!",
+		"email_label": "Email",
+		"phone_label": "Phone",
+		"location_label": "Location",
+		"location_value": "Hanoi, Vietnam"
+	},
+	"footer": {
+		"title": "Cyan Resume",
+		"description": "A passionate developer with a love for technology and creativity. Always seeking new challenges to grow.",
+		"quick_links": "Quick Links",
+		"follow": "Follow",
+		"rights": "All rights reserved.",
+		"social": {
+			"github": "GitHub",
+			"linkedin": "LinkedIn",
+			"email": "Email"
+		}
+	}
+}

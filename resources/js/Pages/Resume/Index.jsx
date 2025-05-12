@@ -13,19 +13,19 @@ import ScrollToTop from '@/Components/features/ScrollToTop';
 import Animations from '@/Components/features/Animations';
 
 export default function Index() {
-  return (
-    <ResumeLayout>
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Education />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
-      <Animations />
-    </ResumeLayout>
-  );
+	return (
+		<ResumeLayout>
+			<Header />
+			<Hero />
+			<About />
+			<Skills />
+			<Experience />
+			<Projects />
+			<Education />
+			<Contact />
+			<Footer />
+			<ScrollToTop />
+			<Animations />
+		</ResumeLayout>
+	);
 } 

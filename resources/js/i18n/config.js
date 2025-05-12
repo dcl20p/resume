@@ -6,26 +6,26 @@ import enTranslations from './locales/en.json';
 import viTranslations from './locales/vi.json';
 
 i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: {
-        translation: enTranslations,
-      },
-      vi: {
-        translation: viTranslations,
-      },
-    },
-    fallbackLng: 'vi',
-    lng: 'vi',
-    interpolation: {
-      escapeValue: false,
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    },
-  });
+	.use(LanguageDetector)
+	.use(initReactI18next)
+	.init({
+		resources: {
+			en: {
+				translation: enTranslations,
+			},
+			vi: {
+				translation: viTranslations,
+			},
+		},
+		fallbackLng: 'vi',
+		lng: 'vi',
+		interpolation: {
+			escapeValue: false,
+		},
+		detection: {
+			order: ['localStorage', 'navigator'],
+			caches: ['localStorage'],
+		},
+	});
 
 export default i18n; 
