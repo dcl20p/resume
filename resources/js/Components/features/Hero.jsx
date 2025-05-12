@@ -97,7 +97,7 @@ export default function Hero() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
                 <img
-                  src="/images/hero-illustration.svg"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
                   alt="Hero Illustration"
                   className="relative z-10 w-full h-auto"
                 />

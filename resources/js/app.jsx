@@ -1,5 +1,5 @@
 import './bootstrap';
-import '../css/global.css';
+import '../css/app.css';
 import './fade-in';
 
 import { createInertiaApp } from '@inertiajs/react';

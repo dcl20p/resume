@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { User, MapPin, Mail, Phone, Code, Briefcase, School, Heart, Book, Coffee } from 'lucide-react';
 import { Card, CardContent } from '@/Components/ui/card';
+import CountUp from 'react-countup';
 
 export default function About() {
   const { t } = useTranslation();
@@ -10,15 +11,18 @@ export default function About() {
   const stats = [
     {
       label: t('about.years'),
-      value: '5+'
+      value: 5,
+      suffix: '+'
     },
     {
       label: t('about.projects'),
-      value: '50+'
+      value: 50,
+      suffix: '+'
     },
     {
       label: t('about.clients'),
-      value: '20+'
+      value: 20,
+      suffix: '+'
     }
   ];
 
@@ -43,7 +47,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="section-padding relative overflow-hidden">
+    <section id="about" className="section-padding relative overflow-hidden bg-ground-light">
       {/* Background decorations */}
       <div className="absolute -top-40 right-0 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -left-20 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl"></div>
@@ -90,7 +94,15 @@ export default function About() {
                   <div className="grid grid-cols-3 gap-4">
                     {stats.map((stat, index) => (
                       <div key={index} className="text-center">
-                        <div className="text-3xl font-bold mb-1 gradient-text">{stat.value}</div>
+                        <div className="text-3xl font-bold mb-1 gradient-text">
+                          <CountUp
+                            end={stat.value}
+                            suffix={stat.suffix}
+                            duration={2.5}
+                            enableScrollSpy
+                            scrollSpyOnce
+                          />
+                        </div>
                         <div className="text-sm text-foreground/60">{stat.label}</div>
                       </div>
                     ))}

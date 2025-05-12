@@ -34,7 +34,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="section-padding relative overflow-hidden">
+    <section id="experience" className="section-padding relative overflow-hidden bg-ground-light">
       {/* Background decorations */}
       <div className="absolute -top-40 left-0 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 right-20 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl"></div>
