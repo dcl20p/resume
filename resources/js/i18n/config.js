@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import axios from 'axios';
 
 import enTranslations from './locales/en.json';
 import viTranslations from './locales/vi.json';
@@ -8,6 +9,7 @@ import viTranslations from './locales/vi.json';
 // Get saved language from localStorage or use default
 const savedLanguage = localStorage.getItem('i18nextLng') || 'vi';
 
+// Initialize i18n
 i18n
 	.use(LanguageDetector)
 	.use(initReactI18next)
@@ -19,7 +21,7 @@ i18n
 			vi: {
 				translation: viTranslations,
 			},
-		},
+		}, 
 		fallbackLng: 'vi',
 		lng: savedLanguage,
 		interpolation: {

@@ -30,36 +30,28 @@ class ContactController extends Controller
         // Verify reCAPTCHA
         $recaptcha = $request->input('recaptcha_token');
         $secret = config('services.recaptcha.secret_key');
-        $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$recaptcha}");
-        $captcha_success = json_decode($verify);
+        $urlVerify = config('services.recaptcha.url_verify');
+        $verify = file_get_contents("{$urlVerify}?secret={$secret}&response={$recaptcha}");
+        $captchaSuccess = json_decode($verify);
 
-        if (!$captcha_success->success) {
+        if (!$captchaSuccess->success) {
             return response()->json([
                 'success' => false,
-                'message' => 'reCAPTCHA verification failed'
+                'message' => __('contact.message.recaptcha_error')
             ], 422);
         }
 
         try {
-            // Debug: Log the message value
-            Log::info('Message value:', [
-                'type' => gettype($request->message),
-                'value' => $request->message
-            ]);
-
-            // Ensure message is a string
-            $message = (string) $request->message;
-
             Mail::to(config('mail.admin_email'))->send(new ContactFormMail(
                 $request->name,
                 $request->email,
                 $request->subject,
-                $message
+                $request->message
             ));
 
             return response()->json([
                 'success' => true,
-                'message' => 'Your message has been sent successfully!'
+                'message' => __('contact.message.success')
             ]);
         } catch (\Exception $e) {
             Log::error('Contact form error:', [
@@ -69,7 +61,7 @@ class ContactController extends Controller
             
             return response()->json([
                 'success' => false,
-                'message' => 'Failed to send message. Please try again later.'
+                'message' => __('contact.message.error')
             ], 500);
         }
     }

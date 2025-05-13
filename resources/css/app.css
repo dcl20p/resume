@@ -192,6 +192,11 @@
   animation: float 3s ease-in-out infinite;
 }
 
+/* Hide reCAPTCHA badge */
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
 /* Responsive Typography */
 @layer utilities {
   .text-balance {

@@ -2,13 +2,31 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
+import axios from 'axios';
+import { useToast } from "@/hooks/use-toast";
 
 export function LanguageToggle() {
 	const { i18n } = useTranslation();
+	const { toast } = useToast();
 
-	const toggleLanguage = () => {
+	const toggleLanguage = async () => {
 		const newLang = i18n.language === 'en' ? 'vi' : 'en';
-		i18n.changeLanguage(newLang);
+		
+		try {
+			// Update session locale
+			await axios.post('/api/locale', { locale: newLang });
+			
+			// Update i18n language
+			i18n.changeLanguage(newLang);
+
+		} catch (error) {
+			console.error('Error updating language:', error);
+			toast({
+				title: t('contact.errors.title'),
+				description:  error.message || error.response?.data?.message,
+				variant: 'destructive'
+			});
+		}
 	};
 
 	return (

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use Illuminate\Http\Request;
+use App\Http\Controllers\LocaleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +16,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::post('contact', [ContactController::class, 'store']); 
+Route::post('contact', [ContactController::class, 'store'])->middleware('throttle:5,1');
+
+Route::get('/locale', [LocaleController::class, 'get']);
+Route::post('/locale', [LocaleController::class, 'update']); 

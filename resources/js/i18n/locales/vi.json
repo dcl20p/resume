@@ -134,7 +134,7 @@
 		"message": "Tin nhắn",
 		"send": "Gửi",
 		"sending": "Đang gửi...",
-		"success": "Tin nhắn đã được gửi thành công!",
+		"success": "Thành công!",
 		"email_label": "Email",
 		"phone_label": "Điện thoại",
 		"location_label": "Địa chỉ",
@@ -156,10 +156,12 @@
 			"message_max": "Tin nhắn không được vượt quá 1000 ký tự"
 		},
 		"errors": {
+			"title": "Lỗi!",
 			"recaptcha": "Xác thực reCAPTCHA thất bại",
 			"server": "Đã xảy ra lỗi. Vui lòng thử lại.",
 			"network": "Lỗi kết nối. Vui lòng kiểm tra lại kết nối mạng."
-		}
+		},
+		"success_description": "Tin nhắn của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ lại với bạn sớm."
 	},
 	"footer": {
 		"title": "Cyan Resume",

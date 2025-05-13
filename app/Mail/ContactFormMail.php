@@ -43,7 +43,7 @@ class ContactFormMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'New Contact Form Submission: ' . $this->subject,
+            subject: $this->subject,
         );
     }
 

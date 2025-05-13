@@ -6,13 +6,17 @@ import { Input } from '@/Components/ui/input';
 import { Textarea } from '@/Components/ui/textarea';
 import { Button } from '@/Components/ui/button';
 import { Github, Linkedin, Mail, Phone, MapPin, Send } from 'lucide-react';
-import { useToast } from "@/Components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { Toaster } from "@/Components/ui/toaster";
 import { Label } from "@/Components/ui/label";
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import axios from 'axios';
+
+// Configure axios defaults
+axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 export default function Contact() {
 	const { t } = useTranslation();
@@ -47,7 +51,7 @@ export default function Contact() {
 	// Load reCAPTCHA script
 	useEffect(() => {
 		const script = document.createElement('script');
-		script.src = `https://www.google.com/recaptcha/api.js?render=${import.meta.env.VITE_RECAPTCHA_SITE_KEY}`;
+		script.src = `${import.meta.env.VITE_RECAPTCHA_URL_RENDER}?render=${import.meta.env.VITE_RECAPTCHA_SITE_KEY}`;
 		script.async = true;
 		document.body.appendChild(script);
 
@@ -57,18 +61,13 @@ export default function Contact() {
 	}, []);
 
 	const onSubmit = async (data) => {
+		setIsSubmitting(true);
 		try {
-			setIsSubmitting(true);
-
 			// Get reCAPTCHA token
-			const token = await window.grecaptcha.execute(import.meta.env.VITE_RECAPTCHA_SITE_KEY, { action: 'contact_form' });
-			console.log('reCAPTCHA token:', token);
-
-			// Log the data being sent
-			console.log('Sending form data:', {
-				...data,
-				recaptcha_token: token
-			});
+			const token = await window.grecaptcha.execute(
+				import.meta.env.VITE_RECAPTCHA_SITE_KEY, 
+				{ action: 'contact_form' }
+			);
 
 			// Send form data to backend
 			const response = await axios.post('/api/contact', {
@@ -78,33 +77,31 @@ export default function Contact() {
 				headers: {
 					'Content-Type': 'application/json',
 					'Accept': 'application/json',
-					'X-Requested-With': 'XMLHttpRequest'
+					'X-Requested-With': 'XMLHttpRequest',
+					'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
 				}
 			});
 
-			console.log('Response:', response.data);
-
-			// Show success message
-			toast({
-				title: t('contact.success'),
-				variant: "success",
-			});
-
-			// Reset form
-			reset();
+			if (response.data.success) {
+				toast({
+					title: t('contact.success'),
+					className: "bg-green-500 border-none text-white",
+					description: t('contact.success_description'),
+					variant: 'success'
+				});
+				reset();
+			} else {
+				toast({
+					title: t('contact.errors.title'),
+					description: t('contact.errors.server'),
+					variant: 'destructive'
+				});
+			}
 		} catch (error) {
-			console.error('Error details:', {
-				message: error.message,
-				response: error.response?.data,
-				status: error.response?.status,
-				headers: error.response?.headers,
-				config: error.config
-			});
-
-			// Show error message
 			toast({
-				title: error.response?.data?.message || t('contact.errors.server'),
-				variant: "destructive",
+				title: t('contact.errors.title'),
+				description:  error.message || error.response?.data?.message,
+				variant: 'destructive'
 			});
 		} finally {
 			setIsSubmitting(false);
