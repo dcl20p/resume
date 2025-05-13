@@ -100,7 +100,7 @@ export default function Hero() {
 									<DropdownMenuTrigger asChild>
 										<Button 
 											size="lg" 
-											className="bg-gradient-to-r from-cyan-500 via-blue-500 to-green-500 hover:opacity-90"
+											className="bg-gradient-to-r from-cyan-500  to-green-500 hover:opacity-90"
 											disabled={isDownloading}
 										>
 											<Download className="w-4 h-4 mr-2" />
@@ -158,7 +158,7 @@ export default function Hero() {
 							<div className="relative">
 								<div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
 								<img
-									src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
+									src="/images/cover/hero-cover.svg"
 									alt="Hero Illustration"
 									className="relative z-10 w-full h-auto"
 								/>
@@ -171,7 +171,7 @@ export default function Hero() {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5, delay: 0.4 }}
-						className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+						className="absolute left-1/2 transform -translate-x-1/2 z-10"
 					>
 						<a
 							href="#about"

@@ -28,7 +28,7 @@
   }
 
   .dark {
-    --background-light: 222.2 84% 7%;
+    --background-light: 222.2 84% 8.2%;
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -58,7 +58,7 @@
 @layer components {
   /* Gradient Text */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-green-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-500  to-green-500;
   }
 
   /* Gradient Background */

@@ -133,11 +133,33 @@
 		"subject": "Tiêu đề",
 		"message": "Tin nhắn",
 		"send": "Gửi",
+		"sending": "Đang gửi...",
 		"success": "Tin nhắn đã được gửi thành công!",
 		"email_label": "Email",
 		"phone_label": "Điện thoại",
 		"location_label": "Địa chỉ",
-		"location_value": "Hà Nội, Việt Nam"
+		"location_value": "Hà Nội, Việt Nam",
+		"connect": "Kết nối với tôi",
+		"validation": {
+			"name_required": "Vui lòng nhập họ tên",
+			"name_min": "Họ tên phải có ít nhất 2 ký tự",
+			"name_max": "Họ tên không được vượt quá 255 ký tự",
+			"name_format": "Họ tên chỉ được chứa chữ cái và khoảng trắng",
+			"email_required": "Vui lòng nhập email",
+			"email_invalid": "Email không hợp lệ",
+			"email_max": "Email không được vượt quá 255 ký tự",
+			"subject_required": "Vui lòng nhập tiêu đề",
+			"subject_min": "Tiêu đề phải có ít nhất 3 ký tự",
+			"subject_max": "Tiêu đề không được vượt quá 255 ký tự",
+			"message_required": "Vui lòng nhập tin nhắn",
+			"message_min": "Tin nhắn phải có ít nhất 10 ký tự",
+			"message_max": "Tin nhắn không được vượt quá 1000 ký tự"
+		},
+		"errors": {
+			"recaptcha": "Xác thực reCAPTCHA thất bại",
+			"server": "Đã xảy ra lỗi. Vui lòng thử lại.",
+			"network": "Lỗi kết nối. Vui lòng kiểm tra lại kết nối mạng."
+		}
 	},
 	"footer": {
 		"title": "Cyan Resume",

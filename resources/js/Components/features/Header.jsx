@@ -81,7 +81,7 @@ export default function Header() {
 							exit={{ opacity: 0, height: 0 }}
 							className="md:hidden"
 						>
-							<div className="py-4 space-y-4">
+							<div className="py-4 space-y-4 text-center">
 								{navItems.map((item) => (
 									<Link
 										key={item.href}
@@ -92,7 +92,7 @@ export default function Header() {
 										{item.label}
 									</Link>
 								))}
-								<div className="flex items-center space-x-2 pt-4">
+								<div className="flex items-center justify-center space-x-2 pt-4">
 									<LanguageToggle />
 									<ThemeToggle />
 								</div>

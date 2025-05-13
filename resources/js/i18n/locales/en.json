@@ -141,11 +141,33 @@
 		"subject": "Subject",
 		"message": "Message",
 		"send": "Send",
+		"sending": "Sending...",
 		"success": "Message sent successfully!",
 		"email_label": "Email",
 		"phone_label": "Phone",
 		"location_label": "Location",
-		"location_value": "Hanoi, Vietnam"
+		"location_value": "Hanoi, Vietnam",
+		"connect": "Connect with me",
+		"validation": {
+			"name_required": "Name is required",
+			"name_min": "Name must be at least 2 characters",
+			"name_max": "Name must not exceed 255 characters",
+			"name_format": "Name can only contain letters and spaces",
+			"email_required": "Email is required",
+			"email_invalid": "Invalid email address",
+			"email_max": "Email must not exceed 255 characters",
+			"subject_required": "Subject is required",
+			"subject_min": "Subject must be at least 3 characters",
+			"subject_max": "Subject must not exceed 255 characters",
+			"message_required": "Message is required",
+			"message_min": "Message must be at least 10 characters",
+			"message_max": "Message must not exceed 1000 characters"
+		},
+		"errors": {
+			"recaptcha": "reCAPTCHA verification failed",
+			"server": "Something went wrong. Please try again.",
+			"network": "Network error. Please check your connection."
+		}
 	},
 	"footer": {
 		"title": "Cyan Resume",
