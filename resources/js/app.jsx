@@ -8,9 +8,10 @@ import { createRoot } from 'react-dom/client';
 import './i18n/config';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const titleName = import.meta.env.TITLE || 'Portfolio';
 
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => `${titleName} - ${appName}`,
     resolve: (name) =>
         resolvePageComponent(
             `./Pages/${name}.jsx`,

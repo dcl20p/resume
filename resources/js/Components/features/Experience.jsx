@@ -13,22 +13,62 @@ export default function Experience() {
 			period: '03/2025 - Nay',
 			description: t('experience.description1'),
 			responsibilities: [
-				t('experience.responsibility1'),
-				t('experience.responsibility3')
+				t('experience.responsibility6'),
+				t('experience.responsibility1')
 			],
-			technologies: ['Django', 'WordPress', 'MySQL', 'Memcached']
+			technologies: ['Django', 'WordPress', 'MySQL', 'Memcached', 'Docker']
 		},
 		{
-			title: t('experience.title2'),
-			company: 'Startup Inc',
-			period: '2018 - 2020',
+			title: 'PHP Developer',
+			company: 'GROOT LIMITED COMPANY',
+			period: '04/2022 - 11/2024',
 			description: t('experience.description2'),
 			responsibilities: [
-				t('experience.responsibility4'),
-				t('experience.responsibility5'),
-				t('experience.responsibility6')
+				t('experience.responsibility8'),
+				t('experience.responsibility9'),
+				t('experience.responsibility10'),
+				t('experience.responsibility2'),
+				t('experience.responsibility3'),
 			],
-			technologies: ['Vue.js', 'Laravel', 'MySQL', 'Docker']
+			technologies: ['PHP (Laminas)', 'Kafka', 'Elasticsearch', 'Docker', 'Redis', 'MariaDB', 'MySQL']
+		},
+		{
+			title: 'PHP Developer',
+			company: 'FPT ONLINE JSC (VNEXPRESS)',
+			period: '09/2019 - 04/2022',
+			description: t('experience.description3'),
+			responsibilities: [
+				t('experience.responsibility11'),
+				t('experience.responsibility12'),
+				t('experience.responsibility13'),
+				t('experience.responsibility14'),
+				t('experience.responsibility15'),
+				t('experience.responsibility16'),
+			],
+			technologies: ['PHP (Zend 1 & 2)', 'Elasticsearch', 'Redis', 'MySQL', 'Memcached', 'Gearman' , 'RabbitMQ']
+		},
+		{
+			title: 'Web Developer',
+			company: 'NAM LONG TECH',
+			period: '12/2018 - 09/2019',
+			description: t('experience.description4'),
+			responsibilities: [
+				t('experience.responsibility17'),
+				t('experience.responsibility18'),
+				t('experience.responsibility19')
+			],
+			technologies: ['Angular 7', 'NodeJS', 'MySQL', 'Laravel 5', 'FLOCSS' , 'SCSS', 'CSS3', 'HTML5', 'JavaScript', 'Bootstrap' , 'Jquery']
+		},
+		{
+			title: t('experience.internship'),
+			company: 'ABS VIỆT MỸ',
+			period: '05/2018 - 08/2018',
+			description: t('experience.description5'),
+			responsibilities: [
+				t('experience.responsibility20'),
+				t('experience.responsibility21')
+			],
+			technologies: ['PHP MVC', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap' , 'Jquery']
 		}
 	];
 
@@ -86,7 +126,7 @@ export default function Experience() {
 													<h4 className="text-foreground/80 font-medium mb-2">{t('experience.responsibilities')}:</h4>
 													<ul className="list-disc list-inside space-y-1 text-foreground/80">
 														{exp.responsibilities.map((responsibility, i) => (
-															<li key={i}>{responsibility}</li>
+															<li key={i} dangerouslySetInnerHTML={{ __html: responsibility }} />
 														))}
 													</ul>
 												</div>

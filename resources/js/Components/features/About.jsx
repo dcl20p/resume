@@ -63,6 +63,7 @@ export default function About() {
 			label: t("about.website"),
 			value: "https://thieusytung.com",
 			icon: <Globe  className="h-5 w-5 icon-gradient" />,
+			link: "https://thieusytung.com",
 		},
 	];
 
@@ -195,7 +196,15 @@ export default function About() {
 													<h4 className="font-medium gradient-text">
 														{info.label}
 													</h4>
-													<p className="text-foreground/80">{info.value}</p>
+													<p className="text-foreground/80">
+														{info.link ? (
+															<a href={info.link} target="_blank" rel="noopener noreferrer" className="text-cyan-500 hover:text-cyan-600 transition-colors">
+																{info.value}
+															</a>
+														) : (
+															info.value
+														)}
+													</p>
 												</div>
 											</div>
 										))}
