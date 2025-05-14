@@ -8,16 +8,15 @@ export default function Experience() {
 
 	const experiences = [
 		{
-			title: t('experience.title1'),
-			company: 'Tech Company',
-			period: '2020 - Present',
+			title: 'Web Developer',
+			company: 'FPT TELECOM',
+			period: '03/2025 - Nay',
 			description: t('experience.description1'),
 			responsibilities: [
 				t('experience.responsibility1'),
-				t('experience.responsibility2'),
 				t('experience.responsibility3')
 			],
-			technologies: ['React', 'Node.js', 'MongoDB', 'AWS']
+			technologies: ['Django', 'WordPress', 'MySQL', 'Memcached']
 		},
 		{
 			title: t('experience.title2'),

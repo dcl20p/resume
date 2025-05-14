@@ -82,7 +82,7 @@ export default function Hero() {
 						>
 							<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
 								<span className="block text-foreground/80">{t('hero.greeting')}</span>
-								<span className="block bg-gradient-to-r from-cyan-500 via-blue-500 to-green-500 bg-clip-text text-transparent">
+								<span className="leading-[1.5] block bg-gradient-to-r from-cyan-500 via-blue-500 to-green-500 bg-clip-text text-transparent">
 									{t('hero.name')}
 								</span>
 							</h1>

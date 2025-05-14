@@ -12,6 +12,7 @@ import {
 	Heart,
 	Book,
 	Coffee,
+	Globe 
 } from "lucide-react";
 import { Card, CardContent } from "@/Components/ui/card";
 import CountUp from "react-countup";
@@ -22,17 +23,17 @@ export default function About() {
 	const stats = [
 		{
 			label: t("about.years"),
-			value: 5,
+			value: 6,
 			suffix: "+",
 		},
 		{
 			label: t("about.projects"),
-			value: 50,
+			value: 25,
 			suffix: "+",
 		},
 		{
-			label: t("about.clients"),
-			value: 20,
+			label: t("about.tech_used"),
+			value: 15,
 			suffix: "+",
 		},
 	];
@@ -40,7 +41,7 @@ export default function About() {
 	const personalInfo = [
 		{
 			label: t("about.name"),
-			value: "Thieu Sy Tung",
+			value: t("hero.name")	,
 			icon: <User className="h-5 w-5 icon-gradient" />,
 		},
 		{
@@ -57,6 +58,11 @@ export default function About() {
 			label: t("about.location"),
 			value: t("about.locationValue"),
 			icon: <MapPin className="h-5 w-5 icon-gradient" />,
+		},
+		{
+			label: t("about.website"),
+			value: "https://thieusytung.com",
+			icon: <Globe  className="h-5 w-5 icon-gradient" />,
 		},
 	];
 

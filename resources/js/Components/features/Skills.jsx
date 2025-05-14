@@ -11,33 +11,39 @@ export default function Skills() {
 			title: t('skills.frontend'),
 			skills: [
 				{ name: 'HTML5', level: 90 },
-				{ name: 'CSS3/SCSS', level: 85 },
-				{ name: 'JavaScript', level: 90 },
-				{ name: 'React', level: 85 },
-				{ name: 'Vue.js', level: 80 },
-				{ name: 'Tailwind CSS', level: 90 }
+				{ name: 'CSS3/SCSS/FLOCSS', level: 85 },
+				{ name: 'JavaScript/Jquery', level: 90 },
+				{ name: 'React', level: 30 },
+				{ name: 'Angular7', level: 30 },
+				{ name: 'Tailwind CSS/Bootstrap', level: 80 },
+				{ name: 'AlpineJS', level: 60 },
+				{ name: 'Vue.js', level: 10 }
 			]
 		},
 		{
 			title: t('skills.backend'),
 			skills: [
-				{ name: 'PHP', level: 85 },
-				{ name: 'Laravel', level: 90 },
-				{ name: 'Node.js', level: 80 },
-				{ name: 'MySQL', level: 85 },
-				{ name: 'PostgreSQL', level: 75 },
-				{ name: 'RESTful APIs', level: 90 }
+				{ name: 'PHP (Zend/Laminas)', level: 100 },
+				{ name: 'Laravel', level: 50 },
+				{ name: 'Node.js', level: 10 },
+				{ name: 'Python (Django)', level: 10 },
+				{ name: 'MySQL/MariaDB', level: 85 },
+				{ name: 'Redis/Memcached', level: 75 },
+				{ name: 'Elasticsearch', level: 90 },
+				{ name: 'Apache Kafka/Gearman/RabbitMQ', level: 70 },
 			]
 		},
 		{
 			title: t('skills.tools'),
 			skills: [
-				{ name: 'Git', level: 85 },
+				{ name: 'Git/SVN', level: 85 },
 				{ name: 'Docker', level: 75 },
-				{ name: 'VS Code', level: 90 },
-				{ name: 'Figma', level: 80 },
+				{ name: 'VS Code/Sublime Text/PHPStorm/Cursor', level: 90 },
+				{ name: 'Figma', level: 10 },
 				{ name: 'Postman', level: 85 },
-				{ name: 'Jira', level: 80 }
+				{ name: 'Jira/Trello/Backlog', level: 50 },
+				{ name: 'Jenkins', level: 50 },
+				{ name: 'Linux/Windows/MacOS', level: 80 },
 			]
 		}
 	];
@@ -76,7 +82,7 @@ export default function Skills() {
 												<div key={skillIndex}>
 													<div className="flex justify-between mb-1">
 														<span className="text-foreground/80">{skill.name}</span>
-														<span className="text-foreground/60">{skill.level}%</span>
+														{/* <span className="text-foreground/60">{skill.level}%</span> */}
 													</div>
 													<div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
 														<motion.div
