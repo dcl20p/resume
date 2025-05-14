@@ -132,17 +132,93 @@
 		"features": "Tính năng chính",
 		"view_code": "Xem mã nguồn",
 		"view_project": "Xem dự án",
-		"project1": {
+		"fmc_website": {
 			"title": "FPT Medicare Website",
 			"description": "Trang web thương mại điện tử cung cấp thông tin và sản phẩm chăm sóc sức khỏe."
 		},
-		"project2": {
-			"title": "Task Management System",
-			"description": "Hệ thống quản lý công việc với các tính năng như phân công, theo dõi tiến độ và báo cáo."
+		"fmc_api": {
+			"title": "FPT Medicare API",
+			"description": "Hệ thống backend API phục vụ cho ứng dụng di động của FPT Medicare."
 		},
-		"project3": {
-			"title": "Social Media Dashboard",
-			"description": "Dashboard quản lý mạng xã hội với các tính năng phân tích, lên lịch bài đăng và theo dõi tương tác."
+		"real_estate": {
+			"title": "Real State",
+			"description": "Hệ thống đăng và tìm kiếm bất động sản dành cho người mua, bán hoặc môi giới."
+		},
+		"scoring": {
+			"title": "School Management",
+			"description": "Quản lý học sinh, giáo viên, lớp học và xác thực thông tin qua QR code, chữ ký số."
+		},
+		"resume": {
+			"title": "Resume System",
+			"description": "Ứng dụng tạo và chia sẻ hồ sơ cá nhân chuyên nghiệp, cho phép tải CV và gửi liên hệ."
+		},
+		"engibase": {
+			"title": "Engibase",
+			"description": "Nền tảng quản lý tuyển dụng cho doanh nghiệp vừa và lớn."
+		},
+		"techknock": {
+			"title": "Techknock",
+			"description": "Hệ thống gửi email hàng loạt đến các công ty thông qua form liên hệ."
+		},
+		"dragon_tiger": {
+			"title": "Dragon Tiger Analytics",
+			"description": "Hệ thống thống kê quảng cáo của game Dragon Tiger, bao gồm click, lượt hiển thị và tỷ lệ chuyển đổi."
+		},
+		"startup_viet": {
+			"title": "Startup Viet",
+			"description": "Cổng thông tin và bình chọn cho cuộc thi tìm kiếm startup tiềm năng do VnExpress tổ chức."
+		},
+		"vrace_v1": {
+			"title": "Virtual Race v1",
+			"description": "Phiên bản đầu tiên của giải chạy bộ online, cho phép người dùng đăng ký và theo dõi quá trình chạy."
+		},
+		"vrace": {
+			"title": "Virtual Race v2",
+			"description": "Phiên bản nâng cấp với SPA và hệ thống API riêng phục vụ cả web và app mobile."
+		},
+		"vaccine": {
+			"title": "Vaccine Page",
+			"description": "Trang thông tin về vaccine và dịch bệnh dành cho độc giả VnExpress."
+		},
+		"science": {
+			"title": "Cuộc Thi Sáng Kiến Khoa Học",
+			"description": "Website cho phép người dùng đăng ý tưởng và sản phẩm khoa học, công nghệ."
+		},
+		"cooking": {
+			"title": "Cooking Page",
+			"description": "Website chia sẻ công thức nấu ăn và mẹo nhà bếp từ cộng đồng."
+		},
+		"email_marketing": {
+			"title": "Email Marketing System",
+			"description": "Hệ thống gửi email hàng loạt và thu thập dữ liệu từ form liên hệ."
+		},
+		"recruitment": {
+			"title": "Recruitment System",
+			"description": "Hệ thống quản lý tuyển dụng, tính lương và đánh giá ứng viên."
+		},
+		"atm": {
+			"title": "ATM Interface",
+			"description": "Giao diện hệ thống máy nạp rút tiền tự động."
+		},
+		"ecommerce": {
+			"title": "E-commerce Website",
+			"description": "Website thương mại điện tử sử dụng PHP MVC."
+		},
+		"copyright": {
+			"title": "Copyright Check System",
+			"description": "Hệ thống kiểm tra bản quyền báo chí."
+		},
+		"rpa": {
+			"title": "RPA Automation",
+			"description": "Số hóa các tác vụ thủ công lặp lại hằng ngày bằng RPA akabot."
+		},
+		"internal_website": {
+			"title": "Internal Website",
+			"description": "Website nội bộ công ty được xây dựng bằng Laravel 5."
+		},
+		"glory_pos": {
+			"title": "Glory POS System",
+			"description": "Hệ thống tính tiền trên máy bán hàng tự động của tập đoàn toàn cầu Glory."
 		}
 	},
 	"contact": {
