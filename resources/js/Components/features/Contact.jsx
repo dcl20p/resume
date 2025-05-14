@@ -281,7 +281,7 @@ export default function Contact() {
 
 										<Button 
 											type="submit" 
-											className="w-full bg-gradient-to-r from-cyan-500 to-green-500 hover:opacity-90"
+											className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600"
 											disabled={isSubmitting}
 										>
 											{isSubmitting ? (

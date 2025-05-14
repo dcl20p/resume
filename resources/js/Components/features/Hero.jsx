@@ -100,7 +100,7 @@ export default function Hero() {
 									<DropdownMenuTrigger asChild>
 										<Button 
 											size="lg" 
-											className="w-full bg-gradient-to-r from-cyan-500 to-green-500 text-white hover:from-cyan-600 hover:to-green-600"
+											className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:from-cyan-600 hover:to-blue-600"
 											disabled={isDownloading}
 										>
 											<Download className="w-4 h-4 mr-2" />

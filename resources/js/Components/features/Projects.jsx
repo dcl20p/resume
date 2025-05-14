@@ -333,7 +333,7 @@ export default function Projects() {
 															</a>
 														</Button> )}
 														{project.demo && (
-														<Button className="w-full bg-gradient-to-r from-cyan-500 to-green-500 hover:opacity-90" asChild>
+														<Button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600" asChild>
 															<a href={project.demo} target="_blank" rel="noopener noreferrer">
 																<ExternalLink className="mr-2 h-4 w-4" />
 																{t('projects.view_project')}
