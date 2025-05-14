@@ -1,11 +1,12 @@
 {
 	"site": {
-		"name": "Thieu Sy Tung Resume"
+		"name": "Thieu Sy Tung"
 	},
 	"nav": {
 		"home": "Home",
 		"about": "About",
 		"experience": "Experience",
+		"education": "Education",
 		"projects": "Projects",
 		"contact": "Contact"
 	},
@@ -13,17 +14,18 @@
 		"greeting": "Hi, I'm",
 		"name": "Thieu Sy Tung",
 		"title": "Full Stack Developer",
-		"description": "I'm a passionate developer with over 6 years of experience in web development. I love creating modern, efficient, and user-friendly web applications.",
+		"description": "I am a passionate developer specializing in building modern web applications.",
 		"download_cv": "Download CV",
 		"download_cv_en": "English CV",
 		"download_cv_vi": "Vietnamese CV",
 		"contact_me": "Contact Me",
 		"downloading": "Downloading...",
 		"download_success": "CV downloaded successfully!",
-		"download_error": "Failed to download CV. Please try again later."
+		"download_error": "Could not download CV. Please try again later."
 	},
 	"about": {
 		"title": "About",
+		"who": "Who am I?",
 		"description": "I am a Full Stack Developer with over 6 years of experience in web development. I am passionate about creating modern, efficient, and user-friendly web applications.",
 		"skills": "Skills",
 		"frontend": "Frontend",
@@ -32,46 +34,65 @@
 		"languages": "Languages",
 		"vi": "Vietnamese",
 		"en": "English",
-		"who": "Who am I?",
 		"download": "Download CV",
 		"stats": "Statistics",
-		"years": "Years Experience",
-		"projects": "Projects Completed",
-		"clients": "Happy Clients",
-		"database": "Database Management",
+		"years": "Years of Experience",
+		"projects": "Completed Projects",
+		"tech_used": "Technologies Used",
+		"clients": "Satisfied Clients",
 		"careerObjective": "Career Objective",
-		"careerObjectiveText": "I am a dedicated developer who always strives to develop and contribute to the tech community.",
 		"personalInfo": "Personal Information",
 		"name": "Full Name",
 		"email": "Email",
 		"phone": "Phone",
 		"location": "Location",
-		"locationValue": "Di An City, Binh Duong, Vietnam",
+		"locationValue": "Di An City, Binh Duong Province, Vietnam",
 		"careerGoals": "Career Goals",
-		"careerGoalsDescription": "As a dedicated developer, I aim to continuously grow and contribute to the tech community. Here are my key career objectives:",
-		"careerGoal1": "Become a Technical Lead and mentor junior developers",
+		"careerGoalsDescription": "As a dedicated developer, I constantly strive to enhance my skills and contribute value to the company. Each project is an opportunity to demonstrate creativity, problem-solving, and teamwork. I believe that personal growth is linked to collective success, so I always aim to build an efficient and creative work environment. Here are my main career goals:",
+		"careerGoal1": "Become a Technical Lead and mentor young developers",
 		"careerGoal2": "Master advanced technologies and contribute to open-source projects",
-		"careerGoal3": "Build innovative solutions that make a positive impact",
+		"careerGoal3": "Build innovative solutions that create positive impact",
 		"interests": "Interests",
 		"interest1": "Programming",
-		"interest2": "Reading",
-		"interest3": "Coffee",
-		"interest4": "Music"
+		"interest2": "Gym",
+		"interest3": "Football",
+		"interest4": "Music",
+		"website": "Website"
 	},
 	"experience": {
+		"present": "Present",
 		"title": "Work Experience",
-		"title1": "PHP Developer",
-		"title2": "Web Developer",
-		"description1": "Working on various projects including FPT Medicare, Engibase, Techknock, and Dragon Tiger",
-		"description2": "Developing and maintaining multiple client projects",
+		"title1": "Senior Full Stack Developer",
+		"title2": "Full Stack Developer",
+		"description1": "Participated in website development and API system for FPT Medicare - a healthcare service platform.",
+		"description2": "Developed internal systems such as recruitment, bulk email sending, and advertising data analysis.",
+		"description3": "Participated in developing multiple journalism projects, competitions, events, and online running platform for VnExpress.",
+		"description4": "Built interface and frontend functionality for ATM system, participated in building company internal website using Laravel 5.",
+		"description5": "Built e-commerce website using PHP MVC.",
 		"responsibilities": "Key Responsibilities",
-		"responsibility1": "Design and develop scalable web applications",
-		"responsibility2": "Mentor junior developers and review code",
-		"responsibility3": "Implement CI/CD and automated testing",
-		"responsibility4": "Build responsive web applications using modern frameworks",
+		"responsibility1": "Design and program APIs with Django",
+		"responsibility2": "Guide new developers and review code",
+		"responsibility3": "Implement CI/CD and automate testing",
+		"responsibility4": "Build responsive web applications using Vue.js and Laravel",
 		"responsibility5": "Optimize database queries and improve application performance",
-		"responsibility6": "Collaborate with designers to improve UI/UX",
-		"technologies": "Technologies Used"
+		"responsibility6": "Develop WordPress websites from Figma designs",
+		"responsibility7": "Customize WooCommerce, integrate ACF",
+		"responsibility8": "Build features for collecting and processing data from emails",
+		"responsibility9": "Develop features for automated batch email sending",
+		"responsibility10": "Write unit tests, create salary service and candidate evaluation",
+		"responsibility11": "Participate in development and maintenance of <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://startup.vnexpress.net/'>Startup</a> website",
+		"responsibility12": "Participate in development and maintenance of sections: <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/khoa-hoc/cuoc-thi-sang-kien-khoa-hoc'>Science Innovation Contest</a>, <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/doi-song/cooking'>Cooking</a>, <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/suc-khoe/vaccine'>Vaccine</a>",
+		"responsibility13": "Develop SPA and webservice for running race - Vrace",
+		"responsibility14": "Design API, background processing using queue service",
+		"responsibility15": "Build journalism copyright checking system",
+		"responsibility16": "Digitize daily repetitive manual tasks using RPA akabot",
+		"responsibility17": "Develop interface using Angular 7 based on existing template",
+		"responsibility18": "Connect to NodeJS backend",
+		"responsibility19": "Participate in outsourcing project for POS system on automatic vending machines of global corporation Glory",
+		"responsibility20": "Programming using MVC model",
+		"responsibility21": "Learn and apply first team workflow",
+		"technologies": "Technologies Used",
+		"internship": "Intern"
 	},
 	"education": {
 		"title": "Education",
@@ -80,13 +101,26 @@
 		"university": "University",
 		"period": "Period",
 		"description": "Description",
-		"degree1": "Bachelor of Information Technology",
-		"school1": "Tran Dai Nghia University",
-		"period1": "2014 - 2019",
-		"description1": "Major in Information Technology. GPA: 2.5/4. Focused on programming and information systems.",
+		"description1": "Software Technology major. Graduated with Good standing with GPA: 2.5/4",
 		"achievements": "Achievements",
-		"achievement1": "Design Website Certificate - VNUHCM University of Science (2017)",
-		"achievement2": "Programming PHP Certificate - VNUHCM University of Science (2018)"
+		"certificate": "Certificates Earned",
+		"achievement1": "First Prize in University-level Student Programming Contest",
+		"achievement3": "Participated and won prizes in hackathons",
+		"education1": {
+			"degree": "Bachelor of Information Technology",
+			"university": "Tran Dai Nghia University",
+			"period": "2014 - 2019",
+			"description": "Software Technology major. Graduated with Excellent standing with average score 8.5/10. Participated in many scientific research projects and programming competitions.",
+			"achievement1": "Scholarship in year 2, 3, and 4"
+		},
+		"education2": {
+			"degree": "Student",
+			"university": "University of Science - VNUHCM Information Technology Center",
+			"period": "2017 - 2018",
+			"description": "Participated in short-term training courses and practical work at the Information Technology Center as a technical staff, aiming to enhance programming and software development skills.",
+			"achievement1": "Website Design – 2017",
+			"achievement2": "PHP Programming – 2018"
+		}
 	},
 	"skills": {
 		"title": "Skills",
@@ -97,63 +131,144 @@
 	},
 	"projects": {
 		"title": "Projects",
+		"technologies": "Technologies",
+		"features": "Key Features",
 		"view_code": "View Code",
 		"view_project": "View Project",
-		"project1": {
+		"fmc_website": {
 			"title": "FPT Medicare Website",
-			"description": "E-commerce medical website using WordPress, WooCommerce, and ACF."
+			"description": "E-commerce website providing healthcare information and products."
 		},
-		"project2": {
+		"fmc_api": {
 			"title": "FPT Medicare API",
-			"description": "Backend API for mobile application using Django, MySQL, MongoDB, and Docker."
+			"description": "Backend API system serving FPT Medicare mobile application."
 		},
-		"project3": {
+		"real_estate": {
+			"title": "Real Estate",
+			"description": "System for posting and searching real estate for buyers, sellers, or brokers."
+		},
+		"scoring": {
+			"title": "School Management",
+			"description": "Manage students, teachers, classes and verify information via QR code, digital signature."
+		},
+		"resume": {
+			"title": "Resume System",
+			"description": "Website for creating and sharing professional personal profiles, allowing CV download and contact submission."
+		},
+		"engibase": {
 			"title": "Engibase",
-			"description": "Recruitment management system using PHP (Laminas), Kafka, Elasticsearch, Redis, and Docker."
+			"description": "Recruitment management platform for medium and large enterprises."
+		},
+		"techknock": {
+			"title": "Techknock",
+			"description": "System for sending bulk emails to companies through contact forms."
+		},
+		"dragon_tiger": {
+			"title": "Dragon Tiger Analytics",
+			"description": "Advertising statistics system for Dragon Tiger game, including clicks, impressions, and conversion rates."
+		},
+		"startup_viet": {
+			"title": "Startup Viet",
+			"description": "Information portal and voting for potential startup competition organized by VnExpress."
+		},
+		"vrace_v1": {
+			"title": "Virtual Race v1",
+			"description": "First version of online running race, allowing users to register and track running progress."
+		},
+		"vrace": {
+			"title": "Virtual Race v2",
+			"description": "Upgraded version with SPA and dedicated API system serving both web and mobile app."
+		},
+		"vaccine": {
+			"title": "Vaccine Page",
+			"description": "Information page about vaccines and diseases for VnExpress readers."
+		},
+		"science": {
+			"title": "Science Innovation Contest",
+			"description": "Website allowing users to post scientific and technological ideas and products."
+		},
+		"cooking": {
+			"title": "Cooking Page",
+			"description": "Website sharing recipes and kitchen tips from the community."
+		},
+		"email_marketing": {
+			"title": "Email Marketing System",
+			"description": "System for sending bulk emails and collecting data from contact forms."
+		},
+		"recruitment": {
+			"title": "Recruitment System",
+			"description": "System for managing recruitment, salary calculation, and candidate evaluation."
+		},
+		"atm": {
+			"title": "ATM Interface",
+			"description": "Interface for automatic cash deposit and withdrawal system."
+		},
+		"ecommerce": {
+			"title": "E-commerce Website",
+			"description": "E-commerce website using PHP MVC."
+		},
+		"copyright": {
+			"title": "Copyright Check System",
+			"description": "System for checking journalism copyright."
+		},
+		"rpa": {
+			"title": "RPA Automation",
+			"description": "Digitize daily repetitive manual tasks using RPA akabot."
+		},
+		"internal_website": {
+			"title": "Internal Website",
+			"description": "Company internal website built with Laravel 5."
+		},
+		"glory_pos": {
+			"title": "Glory POS System",
+			"description": "POS system for automatic vending machines of global corporation Glory."
+		},
+		"admin_pages": {
+			"title": "Admin Pages",
+			"description": "Internal admin pages serving VnExpress website system operations."
 		}
 	},
 	"contact": {
 		"title": "Contact",
 		"get_in_touch": "Get in Touch",
 		"send_message": "Send Message",
-		"name": "Name",
+		"name": "Full Name",
 		"email": "Email",
 		"subject": "Subject",
 		"message": "Message",
 		"send": "Send",
 		"sending": "Sending...",
-		"success": "Successfully!",
+		"success": "Success!",
 		"email_label": "Email",
-		"phone_label": "Phone",
-		"location_label": "Location",
-		"location_value": "Di An City, Binh Duong, Vietnam",
-		"connect": "Connect with me",
+		"phone": "Phone",
+		"location": "Location",
+		"connect": "Connect with Me",
 		"validation": {
-			"name_required": "Name is required",
-			"name_min": "Name must be at least 2 characters",
-			"name_max": "Name must not exceed 255 characters",
-			"name_format": "Name can only contain letters and spaces",
-			"email_required": "Email is required",
+			"name_required": "Please enter your full name",
+			"name_min": "Full name must be at least 2 characters",
+			"name_max": "Full name cannot exceed 255 characters",
+			"name_format": "Full name can only contain letters and spaces",
+			"email_required": "Please enter your email",
 			"email_invalid": "Invalid email address",
-			"email_max": "Email must not exceed 255 characters",
-			"subject_required": "Subject is required",
+			"email_max": "Email cannot exceed 255 characters",
+			"subject_required": "Please enter a subject",
 			"subject_min": "Subject must be at least 3 characters",
-			"subject_max": "Subject must not exceed 255 characters",
-			"message_required": "Message is required",
+			"subject_max": "Subject cannot exceed 255 characters",
+			"message_required": "Please enter your message",
 			"message_min": "Message must be at least 10 characters",
-			"message_max": "Message must not exceed 1000 characters"
+			"message_max": "Message cannot exceed 1000 characters"
 		},
 		"errors": {
 			"title": "Error!",
 			"recaptcha": "reCAPTCHA verification failed",
-			"server": "Something went wrong. Please try again.",
-			"network": "Network error. Please check your connection."
+			"server": "An error occurred. Please try again.",
+			"network": "Connection error. Please check your network connection."
 		},
-		"success_description": "Your message has been sent successfully. We will get back to you soon."
+		"success_description": "Your message has been sent successfully. We will contact you soon."
 	},
 	"footer": {
-		"title": "Thieu Sy Tung Resume",
-		"description": "A passionate developer with a love for technology and creativity. Always seeking new challenges to grow.",
+		"title": "Portfolio - Thieu Sy Tung",
+		"description": "A developer passionate about technology and creativity. Always seeking new challenges for personal growth.",
 		"quick_links": "Quick Links",
 		"follow": "Follow",
 		"rights": "All rights reserved.",

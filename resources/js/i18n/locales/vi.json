@@ -1,6 +1,6 @@
 {
 	"site": {
-		"name": "Cyan Resume"
+		"name": "Thiều Sỹ Tùng"
 	},
 	"nav": {
 		"home": "Trang chủ",
@@ -60,6 +60,7 @@
 		"website": "Website"
 	},
 	"experience": {
+		"present": "Nay",
 		"title": "Kinh nghiệm làm việc",
 		"title1": "Lập trình viên Full Stack cao cấp",
 		"title2": "Lập trình viên Full Stack",

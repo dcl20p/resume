@@ -10,7 +10,7 @@ export default function Experience() {
 		{
 			title: 'Web Developer',
 			company: 'FPT TELECOM',
-			period: '03/2025 - Nay',
+			period: '03/2025 - ' + t('experience.present'),
 			description: t('experience.description1'),
 			responsibilities: [
 				t('experience.responsibility6'),
