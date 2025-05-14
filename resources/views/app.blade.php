@@ -15,16 +15,19 @@
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:site_name" content="{{ config('app.name', 'Laravel') }}">
-        <meta property="og:image" content="@yield('og_image', asset('images/cover/og-image.jpg'))">
+        <meta property="og:image" content="{{ asset('images/cover/og-image.jpg') }}">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta property="og:image:alt" content="@yield('og_image_alt', 'Thiều Sỹ Tùng - Full Stack Developer')">
+        <meta property="og:locale" content="{{ str_replace('_', '-', app()->getLocale()) }}">
+        <meta property="og:locale:alternate" content="vi-VN">
+        <meta property="og:locale:alternate" content="en-US">
 
         <!-- Twitter Card Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="@yield('twitter_title', 'Thiều Sỹ Tùng - Full Stack Developer')">
         <meta name="twitter:description" content="@yield('twitter_description', 'Full Stack Developer with over 6 years of experience in web development.')">
-        <meta name="twitter:image" content="@yield('twitter_image', asset('images/cover/og-image.jpg'))">
+        <meta name="twitter:image" content="{{ asset('images/cover/og-image.jpg') }}">
         <meta name="twitter:image:alt" content="@yield('twitter_image_alt', 'Thiều Sỹ Tùng - Full Stack Developer')">
 
         <!-- Additional Meta Tags -->
