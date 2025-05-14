@@ -6,6 +6,7 @@
 		"home": "Trang chủ",
 		"about": "Giới thiệu",
 		"experience": "Kinh nghiệm",
+		"education": "Học vấn",
 		"projects": "Dự án",
 		"contact": "Liên hệ"
 	},
@@ -53,8 +54,8 @@
 		"careerGoal3": "Xây dựng các giải pháp sáng tạo mang lại tác động tích cực",
 		"interests": "Sở Thích",
 		"interest1": "Lập Trình",
-		"interest2": "Đọc Sách",
-		"interest3": "Cà Phê",
+		"interest2": "Gym",
+		"interest3": "Bóng Đá",
 		"interest4": "Âm Nhạc",
 		"website": "Website"
 	},
@@ -99,24 +100,25 @@
 		"university": "Trường đại học",
 		"period": "Thời gian",
 		"description": "Mô tả",
-		"degree1": "Cử nhân Công nghệ Thông tin",
-		"school1": "Đại học Công nghệ Thông tin - ĐHQG TP.HCM",
-		"description1": "Chuyên ngành Công nghệ Phần mềm. Tốt nghiệp loại Giỏi với điểm trung bình 8.5/10. Tham gia nhiều dự án nghiên cứu khoa học và cuộc thi lập trình.",
+		"description1": "Chuyên ngành Công nghệ Phần mềm. Tốt nghiệp loại Khá với GPA: 2.5/4",
 		"achievements": "Thành tích",
+		"certificate": "Chứng chỉ đạt được",
 		"achievement1": "Giải Nhất cuộc thi Lập trình sinh viên cấp trường",
-		"achievement2": "Học bổng toàn phần cho 4 năm học",
 		"achievement3": "Tham gia và đạt giải trong các cuộc thi hackathon",
 		"education1": {
 			"degree": "Cử nhân Công nghệ Thông tin",
-			"university": "Đại học Công nghệ Thông tin - ĐHQG TP.HCM",
-			"period": "2015 - 2019",
-			"description": "Chuyên ngành Công nghệ Phần mềm. Tốt nghiệp loại Giỏi với điểm trung bình 8.5/10. Tham gia nhiều dự án nghiên cứu khoa học và cuộc thi lập trình."
+			"university": "Trường Đại học Trần Đại Nghĩa",
+			"period": "2014 - 2019",
+			"description": "Chuyên ngành Công nghệ Phần mềm. Tốt nghiệp loại Giỏi với điểm trung bình 8.5/10. Tham gia nhiều dự án nghiên cứu khoa học và cuộc thi lập trình.",
+			"achievement1": "Học bổng năm 2, năm 3 và năm 4"
 		},
 		"education2": {
-			"degree": "Thạc sĩ Khoa học Máy tính",
-			"university": "Đại học Khoa học Tự nhiên - ĐHQG TP.HCM",
-			"period": "2019 - 2021",
-			"description": "Chuyên ngành Trí tuệ Nhân tạo. Nghiên cứu về Machine Learning và Deep Learning. Luận văn về ứng dụng AI trong phân tích dữ liệu lớn."
+			"degree": "Học viên",
+			"university": "Trung tâm Tin học Đại học Khoa học Tự nhiên - ĐHQG TP.HCM",
+			"period": "2017 - 2018",
+			"description": "Tham gia các khóa đào tạo ngắn hạn và thực hành tại Trung tâm Tin học với vai trò kỹ thuật viên, nhằm nâng cao kỹ năng lập trình và phát triển phần mềm.",
+			"achievement1": "Thiết kế Website (Design Website) – 2017",
+			"achievement2": "Lập trình PHP (Programing PHP) – 2018"
 		}
 	},
 	"skills": {
@@ -150,7 +152,7 @@
 		},
 		"resume": {
 			"title": "Resume System",
-			"description": "Ứng dụng tạo và chia sẻ hồ sơ cá nhân chuyên nghiệp, cho phép tải CV và gửi liên hệ."
+			"description": "Trang web tạo và chia sẻ hồ sơ cá nhân chuyên nghiệp, cho phép tải CV và gửi liên hệ."
 		},
 		"engibase": {
 			"title": "Engibase",
@@ -219,7 +221,11 @@
 		"glory_pos": {
 			"title": "Glory POS System",
 			"description": "Hệ thống tính tiền trên máy bán hàng tự động của tập đoàn toàn cầu Glory."
-		}
+		},
+		"admin_pages": {
+			"title": "Admin Pages",
+			"description": "Các trang quản trị nội bộ phục vụ vận hành hệ thống website VnExpress."
+		} 
 	},
 	"contact": {
 		"title": "Liên hệ",
@@ -233,9 +239,8 @@
 		"sending": "Đang gửi...",
 		"success": "Thành công!",
 		"email_label": "Email",
-		"phone_label": "Điện thoại",
-		"location_label": "Địa chỉ",
-		"location_value": "Hà Nội, Việt Nam",
+		"phone": "Điện thoại",
+		"location": "Địa chỉ",
 		"connect": "Kết nối với tôi",
 		"validation": {
 			"name_required": "Vui lòng nhập họ tên",
@@ -261,7 +266,7 @@
 		"success_description": "Tin nhắn của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ lại với bạn sớm."
 	},
 	"footer": {
-		"title": "Cyan Resume",
+		"title": "Portfolio - Thiều Sỹ Tùng",
 		"description": "Một lập trình viên đam mê với công nghệ và sáng tạo. Luôn tìm kiếm những thách thức mới để phát triển bản thân.",
 		"quick_links": "Liên kết nhanh",
 		"follow": "Theo dõi",

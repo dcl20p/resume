@@ -112,20 +112,20 @@ export default function Contact() {
 		{
 			icon: <Mail className="w-5 h-5" />,
 			title: t('contact.email'),
-			value: 'example@email.com',
-			link: 'mailto:example@email.com'
+			value: 'tung096300862@gmail.com',
+			link: 'mailto:tung096300862@gmail.com'
 		},
 		{
 			icon: <Phone className="w-5 h-5" />,
 			title: t('contact.phone'),
-			value: '+84 123 456 789',
-			link: 'tel:+84123456789'
+			value: '+84 963002862',
+			link: 'tel:+84963002862'
 		},
 		{
 			icon: <MapPin className="w-5 h-5" />,
 			title: t('contact.location'),
-			value: t('contact.location_value'),
-			link: 'https://maps.google.com'
+			value: t('about.locationValue'),
+			link: 'https://maps.app.goo.gl/76GrAsv19uyQZsSh8'
 		}
 	];
 
@@ -133,12 +133,12 @@ export default function Contact() {
 		{
 			icon: <Github className="w-5 h-5" />,
 			title: 'GitHub',
-			link: 'https://github.com/username'
+			link: 'https://github.com/dcl20p'
 		},
 		{
 			icon: <Linkedin className="w-5 h-5" />,
 			title: 'LinkedIn',
-			link: 'https://linkedin.com/in/username'
+			link: 'https://www.linkedin.com/in/t%C3%B9ng-thi%E1%BB%81u-s%E1%BB%B9-b68a84167/'
 		}
 	];
 

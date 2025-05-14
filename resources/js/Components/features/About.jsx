@@ -10,8 +10,8 @@ import {
 	Briefcase,
 	School,
 	Heart,
-	Book,
-	Coffee,
+	Dumbbell,
+	Activity,
 	Globe 
 } from "lucide-react";
 import { Card, CardContent } from "@/Components/ui/card";
@@ -28,7 +28,7 @@ export default function About() {
 		},
 		{
 			label: t("about.projects"),
-			value: 25,
+			value: 20,
 			suffix: "+",
 		},
 		{
@@ -89,11 +89,11 @@ export default function About() {
 		},
 		{
 			name: t("about.interest2"),
-			icon: <Book className="h-5 w-5 icon-gradient" />,
+			icon: <Dumbbell className="h-5 w-5 icon-gradient" />,
 		},
 		{
 			name: t("about.interest3"),
-			icon: <Coffee className="h-5 w-5 icon-gradient" />,
+			icon: <Activity className="h-5 w-5 icon-gradient" />,
 		},
 		{
 			name: t("about.interest4"),

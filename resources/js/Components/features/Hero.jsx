@@ -18,17 +18,17 @@ export default function Hero() {
 	const socialLinks = [
 		{
 			icon: <Github className="w-5 h-5" />,
-			href: 'https://github.com/username',
+			href: 'https://github.com/dcl20p',
 			label: 'GitHub'
 		},
 		{
 			icon: <Linkedin className="w-5 h-5" />,
-			href: 'https://linkedin.com/in/username',
+			href: 'https://www.linkedin.com/in/t%C3%B9ng-thi%E1%BB%81u-s%E1%BB%B9-b68a84167/',
 			label: 'LinkedIn'
 		},
 		{
 			icon: <Mail className="w-5 h-5" />,
-			href: 'mailto:example@email.com',
+			href: 'mailto:tung0963002862@gmail.com',
 			label: 'Email'
 		}
 	];

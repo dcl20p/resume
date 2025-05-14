@@ -37,13 +37,13 @@ export default function Skills() {
 			title: t('skills.tools'),
 			skills: [
 				{ name: 'Git/SVN', level: 85 },
-				{ name: 'Docker', level: 75 },
+				{ name: 'Docker/Xampp/Wamp/Laragon', level: 75 },
 				{ name: 'VS Code/Sublime Text/PHPStorm/Cursor', level: 90 },
-				{ name: 'Figma', level: 10 },
 				{ name: 'Postman', level: 85 },
 				{ name: 'Jira/Trello/Backlog', level: 50 },
 				{ name: 'Jenkins', level: 50 },
 				{ name: 'Linux/Windows/MacOS', level: 80 },
+				{ name: 'Apache/Nginx/Caddy', level: 70 },
 			]
 		}
 	];

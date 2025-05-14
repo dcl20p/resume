@@ -34,6 +34,20 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'meta' => [
+                'title' => config('app.name', 'Laravel'),
+                'description' => 'Full Stack Developer with over 6 years of experience in web development. Passionate about creating modern, efficient, and user-friendly web applications.',
+                'author' => 'Thiều Sỹ Tùng',
+                'keywords' => 'Full Stack Developer, Web Developer, PHP Developer, Laravel, Vue.js, React, JavaScript, Portfolio',
+                'og_title' => 'Thiều Sỹ Tùng - Full Stack Developer',
+                'og_description' => 'Full Stack Developer with over 6 years of experience in web development.',
+                'og_image' => asset('images/cover/og-image.jpg'),
+                'og_image_alt' => 'Thiều Sỹ Tùng - Full Stack Developer',
+                'twitter_title' => 'Thiều Sỹ Tùng - Full Stack Developer',
+                'twitter_description' => 'Full Stack Developer with over 6 years of experience in web development.',
+                'twitter_image' => asset('images/cover/og-image.jpg'),
+                'twitter_image_alt' => 'Thiều Sỹ Tùng - Full Stack Developer',
+            ],
         ];
     }
 }

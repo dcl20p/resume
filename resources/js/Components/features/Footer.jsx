@@ -8,17 +8,17 @@ export default function Footer() {
 	const socialLinks = [
 		{
 			icon: <Github className="h-5 w-5" />,
-			href: 'https://github.com/username',
+			href: 'https://github.com/dcl20p',
 			label: 'GitHub'
 		},
 		{
 			icon: <Linkedin className="h-5 w-5" />,
-			href: 'https://linkedin.com/in/username',
+			href: 'https://www.linkedin.com/in/t%C3%B9ng-thi%E1%BB%81u-s%E1%BB%B9-b68a84167/',
 			label: 'LinkedIn'
 		},
 		{
 			icon: <Mail className="h-5 w-5" />,
-			href: 'mailto:your.email@example.com',
+			href: 'mailto:mailto:tung096300862@gmail.com',
 			label: 'Email'
 		}
 	];
@@ -46,10 +46,6 @@ export default function Footer() {
 							</a>
 						))}
 					</div>
-
-					<p className="text-sm text-muted-foreground">
-						{t('footer.copyright')}
-					</p>
 				</div>
 			</div>
 		</footer>

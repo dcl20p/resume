@@ -54,7 +54,7 @@ export default function Projects() {
 			title: t('projects.resume.title'),
 			description: t('projects.resume.description'),
 			technologies: ['Laravel', 'MariaDB', 'Redis', 'TailwindCSS', 'ReactJS', 'Docker', 'Caddy', 'InertiaJS', 'HTML5', 'CSS3', 'Javascript'],
-			image: '/images/projects/resume.png',
+			image: '/images/projects/resume.jpg',
 			demo: 'https://thieusytung.com',
 			github: 'https://github.com/dcl20p/resume',
 			isPetProject: true,
@@ -85,7 +85,7 @@ export default function Projects() {
 			title: t('projects.startup_viet.title'),
 			description: t('projects.startup_viet.description'),
 			technologies: ['Zend 1', 'Elasticsearch', 'Gearman', 'Redis', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-			image: '/images/projects/startup-viet1.jpg',
+			image: '/images/projects/startup-viet.jpg',
 			demo: 'https://startup.vnexpress.net/startup-viet-2020',
 			teamSize: 3
 		},
@@ -93,7 +93,7 @@ export default function Projects() {
 			title: t('projects.vrace_v1.title'),
 			description: t('projects.vrace_v1.description'),
 			technologies: ['Zend 1', 'Elasticsearch', 'Gearman', 'Redis', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-			image: '/images/projects/vrace-v1.jpg',
+			image: '/images/projects/vrace.png',
 			demo: 'https://vrace.vnexpress.net',
 			teamSize: 2
 		},
@@ -101,7 +101,7 @@ export default function Projects() {
 			title: t('projects.vrace.title'),
 			description: t('projects.vrace.description'),
 			technologies: ['Zend 2', 'RabbitMQ', 'Elasticsearch', 'Redis', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-			image: '/images/projects/vrace.jpg',
+			image: '/images/projects/vrace.png',
 			demo: 'https://vrace.vnexpress.net',
 			teamSize: 3
 		},
@@ -137,6 +137,14 @@ export default function Projects() {
 			teamSize: 3
 		},
 		{
+			title: t('projects.admin_pages.title'),
+			description: t('projects.admin_pages.description'),
+			technologies: ['Zend 1', 'Elasticsearch', 'Gearman', 'Redis', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
+			image: '/images/projects/admin-pages.jpg',
+			github: 'https://github.com/dcl20p/admin-pages',
+			teamSize: 3
+		},
+		{
 			title: t('projects.rpa.title'),
 			description: t('projects.rpa.description'),
 			technologies: ['RPA', 'VB.NET', 'Selenium', 'AKABOT', 'Python', 'Javascript'],
@@ -147,7 +155,7 @@ export default function Projects() {
 			title: t('projects.internal_website.title'),
 			description: t('projects.internal_website.description'),
 			technologies: ['Laravel 5', 'MySQL', 'Bootstrap', 'jQuery', 'Javascript', 'HTML5', 'CSS3'],
-			image: '/images/projects/internal.jpg',
+			image: '/images/projects/admin-pages.jpg',
 			teamSize: 2
 		},
 		{

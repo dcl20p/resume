@@ -31,6 +31,7 @@ export default function Header() {
 		{ href: '#about', label: t('nav.about') },
 		{ href: '#experience', label: t('nav.experience') },
 		{ href: '#projects', label: t('nav.projects') },
+		{ href: '#education', label: t('nav.education') },
 		{ href: '#contact', label: t('nav.contact') },
 	];
 

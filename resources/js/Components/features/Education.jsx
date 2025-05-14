@@ -8,26 +8,24 @@ export default function Education() {
 
 	const educations = [
 		{
-			degree: t('education.degree1'),
-			school: t('education.school1'),
-			period: t('education.period1'),
-			description: t('education.description1'),
+			degree: t('education.education1.degree'),
+			school: t('education.education1.university'),
+			period: t('education.education1.period'),
+			description: t('education.education1.description'),
 			achievements: [
-				t('education.achievement1'),
-				t('education.achievement2'),
-				t('education.achievement3')
+				t('education.education1.achievement1')
 			]
 		},
 		{
-			degree: t('education.degree2'),
-			school: t('education.school2'),
-			period: t('education.period2'),
-			description: t('education.description2'),
+			degree: t('education.education2.degree'),
+			school: t('education.education2.university'),
+			period: t('education.education2.period'),
+			description: t('education.education2.description'),
 			achievements: [
-				t('education.achievement4'),
-				t('education.achievement5'),
-				t('education.achievement6')
-			]
+				t('education.education2.achievement1'),
+				t('education.education2.achievement2')
+			],
+			isCertificate: true
 		}
 	];
 
@@ -82,7 +80,7 @@ export default function Education() {
 												</div>
 												<p className="text-foreground/80 mb-4">{edu.description}</p>
 												<div>
-													<h4 className="text-foreground/80 font-medium mb-2">{t('education.achievements')}:</h4>
+													<h4 className="text-foreground/80 font-medium mb-2">{edu.isCertificate ? t('education.certificate') : t('education.achievements')}:</h4>
 													<ul className="list-disc list-inside space-y-1 text-foreground/80">
 														{edu.achievements.map((achievement, i) => (
 															<li key={i}>{achievement}</li>
