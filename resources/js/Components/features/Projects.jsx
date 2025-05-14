@@ -141,7 +141,6 @@ export default function Projects() {
 			description: t('projects.admin_pages.description'),
 			technologies: ['Zend 1', 'Elasticsearch', 'Gearman', 'Redis', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
 			image: '/images/projects/admin-pages.jpg',
-			github: 'https://github.com/dcl20p/admin-pages',
 			teamSize: 3
 		},
 		{
@@ -351,7 +350,7 @@ export default function Projects() {
 					</div>
 				</motion.div>
 			</div>
-			<style jsx global>{`
+			<style>{`
 				.projects-slider {
 					padding: 20px 10px 50px;
 				}
@@ -384,7 +383,7 @@ export default function Projects() {
 				.swiper-button-next-custom {
 					width: 40px;
 					height: 40px;
-					background: rgb(6 182 212);
+					background: linear-gradient(to right, rgb(168 85 247), rgb(236 72 153));
 					border-radius: 50%;
 					color: white;
 					transition: all 0.3s ease;
@@ -399,7 +398,7 @@ export default function Projects() {
 				}
 				.swiper-button-prev-custom:hover,
 				.swiper-button-next-custom:hover {
-					background: rgb(8 145 178);
+					background: linear-gradient(to right, rgb(147 51 234), rgb(219 39 119));
 					transform: translateY(-50%) scale(1.1);
 				}
 				.swiper-button-prev-custom::after,

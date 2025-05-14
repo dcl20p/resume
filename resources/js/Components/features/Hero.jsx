@@ -95,12 +95,12 @@ export default function Hero() {
 								{t('hero.description')}
 							</p>
 
-							<div className="flex flex-wrap gap-4">
+							<div className="flex flex-row gap-2 sm:gap-4">
 								<DropdownMenu>
 									<DropdownMenuTrigger asChild>
 										<Button 
 											size="lg" 
-											className="bg-gradient-to-r from-cyan-500 to-green-500 text-white hover:from-cyan-600 hover:to-green-600"
+											className="w-full bg-gradient-to-r from-cyan-500 to-green-500 text-white hover:from-cyan-600 hover:to-green-600"
 											disabled={isDownloading}
 										>
 											<Download className="w-4 h-4 mr-2" />
@@ -122,7 +122,7 @@ export default function Hero() {
 										</DropdownMenuItem>
 									</DropdownMenuContent>
 								</DropdownMenu>
-								<Button size="lg" variant="outline" asChild>
+								<Button size="lg" variant="outline" asChild className="w-full">
 									<a href="#contact" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:text-white hover:from-purple-600 hover:to-pink-600">
 										<Mail className="w-4 h-4 mr-2" />
 										{t('hero.contact_me')}
