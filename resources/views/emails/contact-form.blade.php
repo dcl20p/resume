@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ __('contact.title') }}</title>
+    <title>{{ $translations['title'] }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,33 +68,33 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>{{ __('contact.success') }}</h1>
+            <h1>{{ $translations['success'] }}</h1>
         </div>
         
         <div class="content">
             <div class="field">
-                <span class="label">{{ __('contact.fields.name') }}:</span>
+                <span class="label">{{ $translations['fields']['name'] }}:</span>
                 <div class="value">{{ $name }}</div>
             </div>
 
             <div class="field">
-                <span class="label">{{ __('contact.fields.email') }}:</span>
+                <span class="label">{{ $translations['fields']['email'] }}:</span>
                 <div class="value">{{ $email }}</div>
             </div>
 
             <div class="field">
-                <span class="label">{{ __('contact.fields.subject') }}:</span>
+                <span class="label">{{ $translations['fields']['subject'] }}:</span>
                 <div class="value">{{ $subject }}</div>
             </div>
 
             <div class="field">
-                <span class="label">{{ __('contact.fields.message') }}:</span>
+                <span class="label">{{ $translations['fields']['message'] }}:</span>
                 <div class="message-content">{{ $messageContent }}</div>
             </div>
         </div>
 
         <div class="footer">
-            {{ __('contact.footer') }}
+            {{ $translations['footer'] }}
         </div>
     </div>
 </body>

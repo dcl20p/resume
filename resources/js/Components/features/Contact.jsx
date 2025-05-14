@@ -69,7 +69,6 @@ export default function Contact() {
 				{ action: 'contact_form' }
 			);
 
-			// Send form data to backend
 			const response = await axios.post('/api/contact', {
 				...data,
 				recaptcha_token: token

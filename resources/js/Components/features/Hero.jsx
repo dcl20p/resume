@@ -100,7 +100,7 @@ export default function Hero() {
 									<DropdownMenuTrigger asChild>
 										<Button 
 											size="lg" 
-											className="bg-gradient-to-r from-cyan-500  to-green-500 hover:opacity-90"
+											className="bg-gradient-to-r from-cyan-500 to-green-500 text-white hover:from-cyan-600 hover:to-green-600"
 											disabled={isDownloading}
 										>
 											<Download className="w-4 h-4 mr-2" />
@@ -123,7 +123,8 @@ export default function Hero() {
 									</DropdownMenuContent>
 								</DropdownMenu>
 								<Button size="lg" variant="outline" asChild>
-									<a href="#contact">
+									<a href="#contact" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:text-white hover:from-purple-600 hover:to-pink-600">
+										<Mail className="w-4 h-4 mr-2" />
 										{t('hero.contact_me')}
 									</a>
 								</Button>
