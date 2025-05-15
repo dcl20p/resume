@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/Components/ui/button';
@@ -11,9 +11,23 @@ import {
 } from "@/Components/ui/dropdown-menu";
 import { toast } from 'sonner';
 
+// Preload HeroImage
+const HeroImage = React.lazy(() => import('./HeroImage'));
+
+// Preload function
+const preloadImage = (src) => {
+	const img = new Image();
+	img.src = src;
+};
+
 export default function Hero() {
 	const { t } = useTranslation();
 	const [isDownloading, setIsDownloading] = useState(false);
+
+	useEffect(() => {
+		// Preload hero image
+		preloadImage('/images/cover/hero-cover.webp');
+	}, []);
 
 	const socialLinks = [
 		{
@@ -156,14 +170,14 @@ export default function Hero() {
 							transition={{ duration: 0.5, delay: 0.2 }}
 							className="hidden lg:block"
 						>
-							<div className="relative">
-								<div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
-								<img
-									src="/images/cover/hero-cover.svg"
-									alt="Hero Illustration"
-									className="relative z-10 w-full h-auto"
-								/>
-							</div>
+							<Suspense fallback={
+								<div className="relative">
+									<div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
+									<div className="relative z-10 w-full h-[400px] bg-gray-200 animate-pulse rounded-lg"></div>
+								</div>
+							}>
+								<HeroImage />
+							</Suspense>
 						</motion.div>
 					</div>
 
