@@ -15,8 +15,8 @@ const Contact = lazy(() => import('@/Components/features/Contact/index'));
 const Footer = lazy(() => import('@/Components/features/Footer'));
 
 // Loading component
-const LoadingFallback = ({ className = "" }) => (
-	<div className={`h-96 animate-pulse bg-gray-200 dark:bg-gray-800 rounded-lg ${className}`}></div>
+const LoadingFallback = ({ className = "", height = "h-96" }) => (
+	<div className={`animate-pulse bg-gray-200 dark:bg-gray-800 rounded-lg ${height} ${className}`}></div>
 );
 
 export default function Index() {
@@ -26,7 +26,7 @@ export default function Index() {
 				<Header />
 			</Suspense>
 
-			<Suspense fallback={<LoadingFallback />}>
+			<Suspense fallback={<LoadingFallback height="h-screen" />}>
 				<Hero />
 			</Suspense>
 

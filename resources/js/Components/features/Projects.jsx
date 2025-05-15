@@ -93,7 +93,7 @@ export default function Projects() {
 			title: t('projects.vrace_v1.title'),
 			description: t('projects.vrace_v1.description'),
 			technologies: ['Zend 1', 'Elasticsearch', 'Gearman', 'Redis', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-			image: '/images/projects/vrace.png',
+			image: '/images/projects/vrace.jpg',
 			demo: 'https://vrace.vnexpress.net',
 			teamSize: 2
 		},
@@ -101,7 +101,7 @@ export default function Projects() {
 			title: t('projects.vrace.title'),
 			description: t('projects.vrace.description'),
 			technologies: ['Zend 2', 'RabbitMQ', 'Elasticsearch', 'Redis', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-			image: '/images/projects/vrace.png',
+			image: '/images/projects/vrace.jpg',
 			demo: 'https://vrace.vnexpress.net',
 			teamSize: 3
 		},

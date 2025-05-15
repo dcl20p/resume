@@ -78,11 +78,11 @@ export default function Hero() {
 	};
 
 	return (
-		<section className="min-h-screen flex items-center relative overflow-hidden">
+		<section className="h-screen flex items-center relative overflow-hidden">
 			{/* Background decorations */}
-			<div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-				<div className="absolute top-0 left-0 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl"></div>
-				<div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl"></div>
+			<div className="absolute inset-0 w-full h-full pointer-events-none">
+				<div className="absolute top-0 left-0 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+				<div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
 			</div>
 
 			<div className="container mx-auto px-4 relative z-10">
@@ -93,6 +93,7 @@ export default function Hero() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.5 }}
+							className="w-full"
 						>
 							<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
 								<span className="block text-foreground/80">{t('hero.greeting')}</span>
@@ -168,15 +169,17 @@ export default function Hero() {
 							initial={{ opacity: 0, scale: 0.8 }}
 							animate={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 0.5, delay: 0.2 }}
-							className="hidden lg:block"
+							className="hidden lg:flex items-center justify-center w-full h-[475px]"
 						>
 							<Suspense fallback={
-								<div className="relative">
+								<div className="relative w-full h-full flex items-center justify-center">
 									<div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
-									<div className="relative z-10 w-full h-[400px] bg-gray-200 animate-pulse rounded-lg"></div>
+									<div className="relative z-10 w-full h-full bg-gray-200 animate-pulse rounded-lg"></div>
 								</div>
 							}>
-								<HeroImage />
+								<div className="w-full h-full flex items-center justify-center">
+									<HeroImage />
+								</div>
 							</Suspense>
 						</motion.div>
 					</div>
