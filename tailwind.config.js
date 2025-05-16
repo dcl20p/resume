@@ -148,6 +148,9 @@ export default {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
                 'cyan-green-gradient': 'linear-gradient(90deg, #0ea5e9, #22c55e)',
+            },
+            height: {
+                'h-minus-64': 'calc(100vh - 64px)',
             }
         },
     },

@@ -81,7 +81,16 @@
     AddType application/x-font-ttf .ttf
     AddType application/x-font-opentype .otf
     AddType application/x-font-woff .woff
-    AddType application/font-woff2 .woff2
-    AddType image/svg+xml .svg
-    AddType image/webp .webp
+    AddType application/font-wok "</fonts/inter-var.woff2>; rel=preload; as=font; crossorigin"
+    </FilesMatch>
+</IfModule>
+
+# Enable HTTP/2 Server Push
+<IfModule mod_http2.c>
+    # Push critical assets
+    <FilesMatch "\.(css|js|woff2)$">
+        Header add Link "</css/app.css>; rel=preload; as=style"
+        Header add Link "</js/app.js>; rel=preload; as=script"
+        Header add Link "</fonts/inter-var.woff2>; rel=preload; as=font; crossorigin"
+    </FilesMatch>
 </IfModule>

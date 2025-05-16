@@ -39,6 +39,7 @@ export default function Footer() {
 								href={link.href}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label={link.label}
 								className="p-3 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors"
 							>
 								{link.icon}

@@ -2,10 +2,10 @@ import React, { Suspense, lazy } from 'react';
 import ResumeLayout from '@/Layouts/ResumeLayout';
 import ScrollToTop from '@/Components/features/ScrollToTop';
 import Animations from '@/Components/features/Animations';
+import Header from '@/Components/features/Header';
+import Hero from '@/Components/features/Hero';
 
 // Lazy load all main components
-const Header = lazy(() => import('@/Components/features/Header'));
-const Hero = lazy(() => import('@/Components/features/Hero'));
 const About = lazy(() => import('@/Components/features/About'));
 const Skills = lazy(() => import('@/Components/features/Skills'));
 const Experience = lazy(() => import('@/Components/features/Experience'));
@@ -22,13 +22,9 @@ const LoadingFallback = ({ className = "", height = "h-96" }) => (
 export default function Index() {
 	return (
 		<ResumeLayout>
-			<Suspense fallback={<LoadingFallback />}>
-				<Header />
-			</Suspense>
+			<Header />
 
-			<Suspense fallback={<LoadingFallback height="h-screen" />}>
-				<Hero />
-			</Suspense>
+			<Hero />
 
 			<Suspense fallback={<LoadingFallback />}>
 				<About />

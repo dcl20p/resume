@@ -32,12 +32,14 @@ export default function ContactInfo() {
         {
             icon: <Github className="w-5 h-5" />,
             title: 'GitHub',
-            link: 'https://github.com/dcl20p'
+            link: 'https://github.com/dcl20p',
+            label: 'View GitHub'
         },
         {
             icon: <Linkedin className="w-5 h-5" />,
             title: 'LinkedIn',
-            link: 'https://www.linkedin.com/in/t%C3%B9ng-thi%E1%BB%81u-s%E1%BB%B9-b68a84167/'
+            link: 'https://www.linkedin.com/in/t%C3%B9ng-thi%E1%BB%81u-s%E1%BB%B9-b68a84167/',
+            label: 'View LinkedIn'
         }
     ];
 
@@ -80,6 +82,7 @@ export default function ContactInfo() {
                                     href={social.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    aria-label={social.label}
                                     className="p-3 rounded-lg hover:bg-cyan-500/10 transition-colors duration-300"
                                 >
                                     <div className="text-cyan-500">{social.icon}</div>

@@ -14,10 +14,10 @@ export default defineConfig({
         rollupOptions: {
             output: {
                 manualChunks: {
-                    'vendor': ['react', 'react-dom'],
-                    'animations': ['framer-motion'],
-                    'ui': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
-                    'forms': ['@hookform/resolvers', 'zod'],
+                    vendor: ['react', 'react-dom'],
+                    animations: ['framer-motion'],
+                    ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+                    forms: ['@hookform/resolvers', 'zod'],
                 },
             },
         },
