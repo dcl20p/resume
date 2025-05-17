@@ -15,6 +15,7 @@ class ContactController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|min:2|max:255',
             'email' => 'required|email|max:255',
+            'phone' => 'required|string|min:10|max:15|regex:/^[0-9+\-\s()]*$/',
             'subject' => 'required|string|min:2|max:255',
             'message' => 'required|string|min:10|max:1000',
             'recaptcha_token' => 'required|string'
@@ -45,6 +46,7 @@ class ContactController extends Controller
             Mail::to(config('mail.admin_email'))->send(new ContactFormMail(
                 $request->name,
                 $request->email,
+                $request->phone,
                 $request->subject,
                 $request->message
             ));

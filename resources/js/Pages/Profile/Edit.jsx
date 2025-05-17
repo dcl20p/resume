@@ -3,34 +3,60 @@ import { Head } from '@inertiajs/react';
 import DeleteUserForm from './Partials/DeleteUserForm';
 import UpdatePasswordForm from './Partials/UpdatePasswordForm';
 import UpdateProfileInformationForm from './Partials/UpdateProfileInformationForm';
+import { Card, CardContent, CardHeader, CardTitle } from '@/Components/ui/card';
+import { useTranslation } from 'react-i18next';
 
-export default function Edit({ mustVerifyEmail, status }) {
+export default function Edit({ auth, mustVerifyEmail, status }) {
+    const { t } = useTranslation();
+
     return (
-        <AuthenticatedLayout
-            header={
-                <h2 className="text-xl font-semibold leading-tight text-gray-800">
-                    Profile
-                </h2>
-            }
-        >
-            <Head title="Profile" />
+        <AuthenticatedLayout user={auth.user}>
+            <Head title={t('profile.title')} />
 
-            <div className="py-12">
-                <div className="mx-auto max-w-7xl space-y-6 sm:px-6 lg:px-8">
-                    <div className="bg-white p-4 shadow sm:rounded-lg sm:p-8">
-                        <UpdateProfileInformationForm
-                            mustVerifyEmail={mustVerifyEmail}
-                            status={status}
-                            className="max-w-xl"
-                        />
+            <div className="min-h-screen bg-background">
+                <div className="sticky top-0 z-10 bg-background/80 backdrop-blur-sm border-b border-border/50">
+                    <div className="container mx-auto px-4 py-6">
+                        <h1 className="text-3xl font-bold">{t('profile.title')}</h1>
                     </div>
+                </div>
+                
+                <div className="container mx-auto px-4 py-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        {/* Left Column */}
+                        <div className="space-y-6">
+                            <Card className="glass-card">
+                                <CardHeader>
+                                    <CardTitle>{t('profile.information.title')}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <UpdateProfileInformationForm
+                                        mustVerifyEmail={mustVerifyEmail}
+                                        status={status}
+                                    />
+                                </CardContent>
+                            </Card>
 
-                    <div className="bg-white p-4 shadow sm:rounded-lg sm:p-8">
-                        <UpdatePasswordForm className="max-w-xl" />
-                    </div>
+                            <Card className="glass-card">
+                                <CardHeader>
+                                    <CardTitle>{t('profile.password.title')}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <UpdatePasswordForm />
+                                </CardContent>
+                            </Card>
+                        </div>
 
-                    <div className="bg-white p-4 shadow sm:rounded-lg sm:p-8">
-                        <DeleteUserForm className="max-w-xl" />
+                        {/* Right Column */}
+                        <div className="space-y-6">
+                            <Card className="glass-card">
+                                <CardHeader>
+                                    <CardTitle>{t('profile.delete.title')}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <DeleteUserForm />
+                                </CardContent>
+                            </Card>
+                        </div>
                     </div>
                 </div>
             </div>

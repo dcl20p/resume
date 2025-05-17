@@ -1,8 +1,14 @@
-import PrimaryButton from '@/Components/PrimaryButton';
+import { useEffect } from 'react';
 import GuestLayout from '@/Layouts/GuestLayout';
+import InputError from '@/Components/InputError';
+import InputLabel from '@/Components/InputLabel';
+import PrimaryButton from '@/Components/PrimaryButton';
+import TextInput from '@/Components/TextInput';
 import { Head, Link, useForm } from '@inertiajs/react';
+import { useTranslation } from 'react-i18next';
 
 export default function VerifyEmail({ status }) {
+    const { t } = useTranslation();
     const { post, processing } = useForm({});
 
     const submit = (e) => {
@@ -11,37 +17,44 @@ export default function VerifyEmail({ status }) {
         post(route('verification.send'));
     };
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            window.location.reload();
+        }, 1000 * 60);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <GuestLayout>
-            <Head title="Email Verification" />
+            <Head title={t('auth.verify_email')} />
 
-            <div className="mb-4 text-sm text-gray-600">
-                Thanks for signing up! Before getting started, could you verify
-                your email address by clicking on the link we just emailed to
-                you? If you didn't receive the email, we will gladly send you
-                another.
+            <div className="mb-4 text-sm text-foreground/80">
+                {t('auth.verify_email_text')}
             </div>
 
             {status === 'verification-link-sent' && (
                 <div className="mb-4 text-sm font-medium text-green-600">
-                    A new verification link has been sent to the email address
-                    you provided during registration.
+                    {t('auth.verification_link_sent')}
                 </div>
             )}
 
-            <form onSubmit={submit}>
-                <div className="mt-4 flex items-center justify-between">
-                    <PrimaryButton disabled={processing}>
-                        Resend Verification Email
+            <form onSubmit={submit} className="space-y-6">
+                <div className="flex items-center justify-between">
+                    <PrimaryButton 
+                        className="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 focus:ring-cyan-500"
+                        disabled={processing}
+                    >
+                        {t('auth.resend_verification')}
                     </PrimaryButton>
 
                     <Link
                         href={route('logout')}
                         method="post"
                         as="button"
-                        className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        className="text-sm text-foreground/80 hover:text-foreground"
                     >
-                        Log Out
+                        {t('auth.log_out')}
                     </Link>
                 </div>
             </form>

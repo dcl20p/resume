@@ -16,6 +16,7 @@ class ContactFormMail extends Mailable
 
     public $name;
     public $email;
+    public $phone;
     public $subject;
     public $messageContent;
     public $translations;
@@ -23,11 +24,12 @@ class ContactFormMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($name, $email, $subject, $message)
+    public function __construct($name, $email, $phone, $subject, $message)
     {
         Log::info('ContactFormMail constructor:', [
             'name' => $name,
             'email' => $email,
+            'phone' => $phone,
             'subject' => $subject,
             'message' => $message,
             'message_type' => gettype($message)
@@ -35,6 +37,7 @@ class ContactFormMail extends Mailable
 
         $this->name = $name;
         $this->email = $email;
+        $this->phone = $phone;
         $this->subject = $subject;
         $this->messageContent = (string) $message;
         
@@ -46,6 +49,7 @@ class ContactFormMail extends Mailable
             'fields' => [
                 'name' => trans('contact.fields.name', [], $currentLocale),
                 'email' => trans('contact.fields.email', [], $currentLocale),
+                'phone' => trans('contact.fields.phone', [], $currentLocale),
                 'subject' => trans('contact.fields.subject', [], $currentLocale),
                 'message' => trans('contact.fields.message', [], $currentLocale)
             ],
@@ -78,6 +82,7 @@ class ContactFormMail extends Mailable
             with: [
                 'name' => $this->name,
                 'email' => $this->email,
+                'phone' => $this->phone,
                 'subject' => $this->subject,
                 'messageContent' => $this->messageContent,
                 'translations' => $this->translations

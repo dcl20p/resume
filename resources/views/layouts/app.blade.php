@@ -48,7 +48,9 @@
         <link rel="manifest" href="{{ asset('images/favicon/site.webmanifest') }}">
 
         <!-- Preload Critical Assets -->
+        @if(request()->routeIs('home'))
         <link rel="preload" href="{{ asset('images/cover/hero-cover.webp') }}" as="image" type="image/webp" fetchpriority="high">
+        @endif
 
         <!-- Critical CSS -->
         <style>
@@ -66,19 +68,7 @@
         @viteReactRefresh
         @vite(['resources/js/app.jsx'])
         @inertiaHead
-
-        <!-- Dynamic reCAPTCHA Loading -->
-        <script>
-            function loadReCaptcha() {
-                if (!window.grecaptcha) {
-                    const script = document.createElement('script');
-                    script.src = 'https://www.google.com/recaptcha/api.js?render=explicit';
-                    script.async = true;
-                    script.defer = true;
-                    document.head.appendChild(script);
-                }
-            }
-        </script>
+        
     </head>
     <body class="font-sans antialiased">
         @inertia

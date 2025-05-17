@@ -8,7 +8,10 @@
 		"experience": "Kinh nghiệm",
 		"education": "Học vấn",
 		"projects": "Dự án",
-		"contact": "Liên hệ"
+		"contact": "Liên hệ",
+		"dashboard": "Bảng điều khiển",
+		"profile": "Hồ sơ",
+		"logout": "Đăng xuất"
 	},
 	"hero": {
 		"greeting": "Xin chào, tôi là",
@@ -82,17 +85,18 @@
 		"responsibility10": "Viết unit test, tạo service tính lương và đánh giá ứng viên",
 		"responsibility11": "Tham gia phát triển và bảo trì website <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://startup.vnexpress.net/'>Startup</a>",
 		"responsibility12": "Tham gia phát triển và bảo trì các chuyên mục: <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/khoa-hoc/cuoc-thi-sang-kien-khoa-hoc'>Cuộc thi sáng kiến khoa học</a>, <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/doi-song/cooking'>Cooking</a>, <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/suc-khoe/vaccine'>Vaccine</a>",
-		"responsibility13": "Phát triển SPA và webservice cho giải chạy bộ - Vrace",
+		"responsibility13": "Phát triển SPA và webservice cho giải chạy bộ - <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vrace.com.vn/'>Vrace</a>",
 		"responsibility14": "Thiết kế API, xử lý nền bằng queue service",
 		"responsibility15": "Xây dựng hệ thống kiểm tra bản quyền báo chí",
-		"responsibility16": "Số hóa các tác vụ thủ công lặp lại hằng ngày bằng RPA akabot",
+		"responsibility16": "Số hóa các tác vụ thủ công lặp lại hằng ngày bằng <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://akabot.com/'>RPA akabot</a>",
 		"responsibility17": "Phát triển giao diện bằng Angular 7 theo template có sẵn",
 		"responsibility18": "Kết nối backend NodeJS",
 		"responsibility19": "Tham gia outsource dự án hệ thống tính tiền trên máy bán hàng tự động của tập đoàn toàn cầu Glory",
 		"responsibility20": "Lập trình theo mô hình MVC",
 		"responsibility21": "Học và áp dụng quy trình làm việc nhóm đầu tiên",
 		"technologies": "Công nghệ sử dụng",
-		"internship": "Thực tập sinh"
+		"internship": "Thực tập sinh",
+		"abs": "ABS Việt Mỹ"
 	},
 	"education": {
 		"title": "Học vấn",
@@ -251,6 +255,9 @@
 			"email_required": "Vui lòng nhập email",
 			"email_invalid": "Email không hợp lệ",
 			"email_max": "Email không được vượt quá 255 ký tự",
+			"phone_min": "Số điện thoại phải có ít nhất 10 chữ số",
+			"phone_max": "Số điện thoại không được vượt quá 15 chữ số",
+			"phone_format": "Số điện thoại chỉ được chứa số, +, -, khoảng trắng và dấu ngoặc",
 			"subject_required": "Vui lòng nhập tiêu đề",
 			"subject_min": "Tiêu đề phải có ít nhất 3 ký tự",
 			"subject_max": "Tiêu đề không được vượt quá 255 ký tự",
@@ -276,6 +283,112 @@
 			"github": "GitHub",
 			"linkedin": "LinkedIn",
 			"email": "Email"
+		}
+	},
+	"auth": {
+		"login": {
+			"title": "Đăng nhập",
+			"email": "Email",
+			"password": "Mật khẩu",
+			"remember": "Ghi nhớ đăng nhập",
+			"forgot": "Quên mật khẩu?",
+			"submit": "Đăng nhập",
+			"no_account": "Chưa có tài khoản?",
+			"register": "Đăng ký"
+		},
+		"register": {
+			"title": "Đăng ký",
+			"name": "Tên",
+			"email": "Email",
+			"password": "Mật khẩu",
+			"password_confirmation": "Xác nhận mật khẩu",
+			"submit": "Đăng ký",
+			"have_account": "Đã có tài khoản?",
+			"login": "Đăng nhập"
+		},
+		"forgot_password": {
+			"title": "Quên mật khẩu",
+			"description": "Quên mật khẩu? Không sao. Chỉ cần cho chúng tôi biết địa chỉ email của bạn và chúng tôi sẽ gửi cho bạn một liên kết đặt lại mật khẩu.",
+			"email": "Email",
+			"submit": "Gửi liên kết đặt lại mật khẩu",
+			"back_to_login": "Quay lại đăng nhập"
+		},
+		"reset_password": {
+			"title": "Đặt lại mật khẩu",
+			"email": "Email",
+			"password": "Mật khẩu mới",
+			"password_confirmation": "Xác nhận mật khẩu",
+			"submit": "Đặt lại mật khẩu"
+		},
+		"verify_email": "Xác thực Email",
+		"confirm_password": "Xác nhận mật khẩu",
+		"remember_me": "Ghi nhớ đăng nhập",
+		"verification_link_sent": "Một liên kết xác minh mới đã được gửi đến địa chỉ email bạn đã cung cấp khi đăng ký.",
+		"resend_verification": "Gửi lại email xác thực",
+		"log_out": "Đăng xuất",
+		"email_reset_link": "Gửi liên kết đặt lại mật khẩu",
+		"reset_password_button": "Đặt lại mật khẩu"
+	},
+	"profile": {
+		"title": "Hồ sơ",
+		"information": {
+			"title": "Thông tin hồ sơ",
+			"description": "Cập nhật thông tin hồ sơ và địa chỉ email của tài khoản của bạn.",
+			"name": "Tên",
+			"email": "Email",
+			"unverified": "Địa chỉ email của bạn chưa được xác minh.",
+			"resend_verification": "Nhấp vào đây để gửi lại email xác minh.",
+			"verification_sent": "Một liên kết xác minh mới đã được gửi đến địa chỉ email của bạn."
+		},
+		"password": {
+			"title": "Cập nhật mật khẩu",
+			"description": "Đảm bảo tài khoản của bạn đang sử dụng mật khẩu dài và ngẫu nhiên để bảo mật.",
+			"current": "Mật khẩu hiện tại",
+			"new": "Mật khẩu mới",
+			"confirm": "Xác nhận mật khẩu"
+		},
+		"delete": {
+			"title": "Xóa tài khoản",
+			"description": "Khi tài khoản của bạn bị xóa, tất cả tài nguyên và dữ liệu của nó sẽ bị xóa vĩnh viễn. Trước khi xóa tài khoản, vui lòng tải xuống bất kỳ dữ liệu hoặc thông tin nào mà bạn muốn giữ lại.",
+			"button": "Xóa tài khoản",
+			"confirm_title": "Bạn có chắc chắn muốn xóa tài khoản của mình?",
+			"confirm_description": "Khi tài khoản của bạn bị xóa, tất cả tài nguyên và dữ liệu của nó sẽ bị xóa vĩnh viễn. Vui lòng nhập mật khẩu của bạn để xác nhận rằng bạn muốn xóa vĩnh viễn tài khoản của mình.",
+			"password": "Mật khẩu",
+			"confirm_button": "Xóa tài khoản"
+		}
+	},
+	"common": {
+		"save": "Lưu",
+		"saved": "Đã lưu.",
+		"cancel": "Hủy"
+	},
+	"validation": {
+		"required": "Vui lòng nhập :attribute.",
+		"email": ":attribute phải là một địa chỉ email hợp lệ.",
+		"min": {
+			"string": ":attribute phải có ít nhất :min ký tự."
+		},
+		"confirmed": "Xác nhận :attribute không khớp.",
+		"unique": ":attribute đã được sử dụng.",
+		"attributes": {
+			"name": "Tên",
+			"email": "Email",
+			"password": "Mật khẩu",
+			"password_confirmation": "Xác nhận mật khẩu"
+		}
+	},
+	"dashboard": {
+		"title": "Bảng điều khiển",
+		"welcome": "Chào mừng",
+		"welcome_message": "Bạn đã đăng nhập thành công!",
+		"totalVisits": "Tổng lượt truy cập",
+		"todayVisits": "Lượt truy cập hôm nay",
+		"uniqueVisitors": "Người dùng duy nhất",
+		"pageViews": "Lượt xem trang",
+		"tabs": {
+			"pages": "Trang",
+			"countries": "Quốc gia",
+			"devices": "Thiết bị"
 		}
 	}
 }

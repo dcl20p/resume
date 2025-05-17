@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from '@inertiajs/react';
-import { ThemeToggle } from '@/Components/features/ThemeToggle';
+import { ThemeToggle } from '@/Components/ThemeToggle';
 import { LanguageToggle } from '@/Components/features/LanguageToggle';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';

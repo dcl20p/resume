@@ -31,6 +31,10 @@ export default function ContactForm() {
         email: z.string()
             .email(t('contact.validation.email_invalid'))
             .max(255, t('contact.validation.email_max')),
+        phone: z.string()
+            .min(10, t('contact.validation.phone_min'))
+            .max(15, t('contact.validation.phone_max'))
+            .regex(/^[0-9+\-\s()]*$/, t('contact.validation.phone_format')),
         subject: z.string()
             .min(3, t('contact.validation.subject_min'))
             .max(255, t('contact.validation.subject_max')),
@@ -50,6 +54,7 @@ export default function ContactForm() {
         defaultValues: {
             name: '',
             email: '',
+            phone: '',
             subject: '',
             message: '',
         }
@@ -170,6 +175,21 @@ export default function ContactForm() {
                                     <p className="text-red-500 text-sm">{errors.email.message}</p>
                                 )}
                             </div>
+                        </div>
+
+                        <div className="space-y-2">
+                            <Label htmlFor="phone" className="text-foreground/80">{t('contact.phone')}</Label>
+                            <Input
+                                id="phone"
+                                type="tel"
+                                {...register('phone')}
+                                className={`bg-gray-50/50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 ${
+                                    errors.phone ? 'border-red-500' : ''
+                                }`}
+                            />
+                            {errors.phone && (
+                                <p className="text-red-500 text-sm">{errors.phone.message}</p>
+                            )}
                         </div>
 
                         <div className="space-y-2">

@@ -8,7 +8,10 @@
 		"experience": "Experience",
 		"education": "Education",
 		"projects": "Projects",
-		"contact": "Contact"
+		"contact": "Contact",
+		"dashboard": "Dashboard",
+		"profile": "Profile",
+		"logout": "Log Out"
 	},
 	"hero": {
 		"greeting": "Hi, I'm",
@@ -82,17 +85,18 @@
 		"responsibility10": "Write unit tests, create salary service and candidate evaluation",
 		"responsibility11": "Participate in development and maintenance of <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://startup.vnexpress.net/'>Startup</a> website",
 		"responsibility12": "Participate in development and maintenance of sections: <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/khoa-hoc/cuoc-thi-sang-kien-khoa-hoc'>Science Innovation Contest</a>, <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/doi-song/cooking'>Cooking</a>, <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vnexpress.net/suc-khoe/vaccine'>Vaccine</a>",
-		"responsibility13": "Develop SPA and webservice for running race - Vrace",
+		"responsibility13": "Develop SPA and webservice for running race - <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://vrace.com.vn/'>Vrace</a>",
 		"responsibility14": "Design API, background processing using queue service",
 		"responsibility15": "Build journalism copyright checking system",
-		"responsibility16": "Digitize daily repetitive manual tasks using RPA akabot",
+		"responsibility16": "Digitize daily repetitive manual tasks using <a class='text-cyan-500 hover:text-cyan-600 transition-colors' href='https://akabot.com/'>RPA akabot</a>",
 		"responsibility17": "Develop interface using Angular 7 based on existing template",
 		"responsibility18": "Connect to NodeJS backend",
 		"responsibility19": "Participate in outsourcing project for POS system on automatic vending machines of global corporation Glory",
 		"responsibility20": "Programming using MVC model",
 		"responsibility21": "Learn and apply first team workflow",
 		"technologies": "Technologies Used",
-		"internship": "Intern"
+		"internship": "Intern",
+		"abs": "ABS Viet My"
 	},
 	"education": {
 		"title": "Education",
@@ -251,6 +255,9 @@
 			"email_required": "Please enter your email",
 			"email_invalid": "Invalid email address",
 			"email_max": "Email cannot exceed 255 characters",
+			"phone_min": "Phone number must be at least 10 digits",
+			"phone_max": "Phone number cannot exceed 15 digits",
+			"phone_format": "Phone number can only contain numbers, +, -, spaces and parentheses",
 			"subject_required": "Please enter a subject",
 			"subject_min": "Subject must be at least 3 characters",
 			"subject_max": "Subject cannot exceed 255 characters",
@@ -276,6 +283,120 @@
 			"github": "GitHub",
 			"linkedin": "LinkedIn",
 			"email": "Email"
+		}
+	},
+	"stats": {
+		"title": "Website Statistics",
+		"total_visits": "Total Visits",
+		"today_visits": "Today Visits",
+		"unique_visitors": "Unique Visitors",
+		"page_views": "Page Views"
+	},
+	"auth": {
+		"login": {
+			"title": "Login",
+			"email": "Email",
+			"password": "Password",
+			"remember": "Remember me",
+			"forgot": "Forgot your password?",
+			"submit": "Log in",
+			"no_account": "Don't have an account?",
+			"register": "Register"
+		},
+		"register": {
+			"title": "Register",
+			"name": "Name",
+			"email": "Email",
+			"password": "Password",
+			"password_confirmation": "Confirm Password",
+			"submit": "Register",
+			"have_account": "Already have an account?",
+			"login": "Log in"
+		},
+		"forgot_password": {
+			"title": "Forgot Password",
+			"description": "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.",
+			"email": "Email",
+			"submit": "Email Password Reset Link",
+			"back_to_login": "Back to login"
+		},
+		"reset_password": {
+			"title": "Reset Password",
+			"email": "Email",
+			"password": "New Password",
+			"password_confirmation": "Confirm Password",
+			"submit": "Reset Password"
+		},
+		"verify_email": "Email Verification",
+		"confirm_password": "Confirm Password",
+		"remember_me": "Remember me",
+		"verify_email_text": "Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.",
+		"verification_link_sent": "A new verification link has been sent to the email address you provided during registration.",
+		"resend_verification": "Resend Verification Email",
+		"log_out": "Log Out",
+		"email_reset_link": "Email Password Reset Link",
+		"reset_password_button": "Reset Password"
+	},
+	"profile": {
+		"title": "Profile",
+		"information": {
+			"title": "Profile Information",
+			"description": "Update your account's profile information and email address.",
+			"name": "Name",
+			"email": "Email",
+			"unverified": "Your email address is unverified.",
+			"resend_verification": "Click here to re-send the verification email.",
+			"verification_sent": "A new verification link has been sent to your email address."
+		},
+		"password": {
+			"title": "Update Password",
+			"description": "Ensure your account is using a long, random password to stay secure.",
+			"current": "Current Password",
+			"new": "New Password",
+			"confirm": "Confirm Password"
+		},
+		"delete": {
+			"title": "Delete Account",
+			"description": "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.",
+			"button": "Delete Account",
+			"confirm_title": "Are you sure you want to delete your account?",
+			"confirm_description": "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.",
+			"password": "Password",
+			"confirm_button": "Delete Account"
+		}
+	},
+	"common": {
+		"save": "Save",
+		"saved": "Saved.",
+		"cancel": "Cancel"
+	},
+	"validation": {
+		"required": "The :attribute field is required.",
+		"email": "The :attribute must be a valid email address.",
+		"min": {
+			"string": "The :attribute must be at least :min characters."
+		},
+		"confirmed": "The :attribute confirmation does not match.",
+		"unique": "The :attribute has already been taken.",
+		"attributes": {
+			"name": "Name",
+			"email": "Email",
+			"password": "Password",
+			"password_confirmation": "Password confirmation"
+		}
+	},
+	"dashboard": {
+		"title": "Dashboard",
+		"welcome": "Welcome",
+		"welcome_message": "You're logged in!",
+		"totalVisits": "Total Visits",
+		"todayVisits": "Today's Visits",
+		"uniqueVisitors": "Unique Visitors",
+		"pageViews": "Page Views",
+		"tabs": {
+			"pages": "Pages",
+			"countries": "Countries",
+			"devices": "Devices"
 		}
 	}
 }

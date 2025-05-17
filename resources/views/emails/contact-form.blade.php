@@ -83,6 +83,11 @@
             </div>
 
             <div class="field">
+                <span class="label">{{ $translations['fields']['phone'] }}:</span>
+                <div class="value">{{ $phone }}</div>
+            </div>
+
+            <div class="field">
                 <span class="label">{{ $translations['fields']['subject'] }}:</span>
                 <div class="value">{{ $subject }}</div>
             </div>

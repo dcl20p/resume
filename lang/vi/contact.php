@@ -6,6 +6,7 @@ return [
     'fields' => [
         'name' => 'Họ và tên',
         'email' => 'Email',
+        'phone' => 'Số điện thoại',
         'subject' => 'Tiêu đề',
         'message' => 'Nội dung'
     ],

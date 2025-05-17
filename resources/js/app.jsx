@@ -6,7 +6,8 @@ import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createRoot } from 'react-dom/client';
 import { I18nextProvider } from 'react-i18next';
-import i18n from './i18n/config';
+import i18n from '@/i18n/config';
+import GoogleAnalytics from '@/Components/GoogleAnalytics';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 const titleName = import.meta.env.TITLE || 'Portfolio';
@@ -28,6 +29,7 @@ createInertiaApp({
         root.render(
             <I18nextProvider i18n={i18n}>
                 <App {...props} />
+                <GoogleAnalytics />
             </I18nextProvider>
         );
     },
