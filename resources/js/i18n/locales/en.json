@@ -1,4 +1,7 @@
 {
+	"resume": {
+		"title": "Home"
+	},
 	"site": {
 		"name": "Thieu Sy Tung"
 	},
@@ -335,7 +338,10 @@
 		"resend_verification": "Resend Verification Email",
 		"log_out": "Log Out",
 		"email_reset_link": "Email Password Reset Link",
-		"reset_password_button": "Reset Password"
+		"reset_password_button": "Reset Password",
+		"failed": "These credentials do not match our records.",
+		"password": "The provided password is incorrect.",
+		"throttle": "Too many login attempts. Please try again in :seconds seconds."
 	},
 	"profile": {
 		"title": "Profile",
@@ -368,7 +374,15 @@
 	"common": {
 		"save": "Save",
 		"saved": "Saved.",
-		"cancel": "Cancel"
+		"cancel": "Cancel",
+		"loading": "Loading...",
+		"delete": "Delete",
+		"edit": "Edit",
+		"update": "Update",
+		"success": "Success",
+		"error": "Error",
+		"warning": "Warning",
+		"info": "Information"
 	},
 	"validation": {
 		"required": "The :attribute field is required.",
@@ -376,13 +390,17 @@
 		"min": {
 			"string": "The :attribute must be at least :min characters."
 		},
+		"max": {
+			"string": "The :attribute may not be greater than :max characters."
+		},
 		"confirmed": "The :attribute confirmation does not match.",
-		"unique": "The :attribute has already been taken.",
+		"current_password": "The password is incorrect.",
 		"attributes": {
 			"name": "Name",
 			"email": "Email",
 			"password": "Password",
-			"password_confirmation": "Password confirmation"
+			"password_confirmation": "Password confirmation",
+			"current_password": "Current password"
 		}
 	},
 	"dashboard": {
@@ -398,5 +416,27 @@
 			"countries": "Countries",
 			"devices": "Devices"
 		}
+	},
+	"analytics": {
+		"title": "Analytics",
+		"total_visits": "Total Visits",
+		"today_visits": "Today's Visits",
+		"total_page_views": "Total Page Views",
+		"daily_stats": "Daily Visitors & Page Views",
+		"visitors": "Visitors",
+		"page_views": "Page Views",
+		"user_types": "User Types",
+		"top_browsers": "Top Browsers",
+		"top_pages": "Top Pages",
+		"top_countries": "Top Countries",
+		"new": "New Users",
+		"returning": "Returning Users"
+	},
+	"passwords": {
+		"sent": "We have emailed your password reset link.",
+		"reset": "Your password has been reset.",
+		"throttled": "Please wait before retrying.",
+		"token": "This password reset token is invalid.",
+		"user": "We can't find a user with that email address."
 	}
 }

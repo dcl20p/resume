@@ -4,7 +4,8 @@ import ScrollToTop from '@/Components/features/ScrollToTop';
 import Animations from '@/Components/features/Animations';
 import Header from '@/Components/features/Header';
 import Hero from '@/Components/features/Hero';
-
+import { Head } from '@inertiajs/react';
+import { useTranslation } from 'react-i18next';
 // Lazy load all main components
 const About = lazy(() => import('@/Components/features/About'));
 const Skills = lazy(() => import('@/Components/features/Skills'));
@@ -20,8 +21,11 @@ const LoadingFallback = ({ className = "", height = "h-96" }) => (
 );
 
 export default function Index() {
+	const { t } = useTranslation();
+
 	return (
 		<ResumeLayout>
+            <Head title={t('resume.title')} />
 			<Header />
 
 			<Hero />

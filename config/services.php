@@ -40,5 +40,4 @@ return [
         'secret_key' => env('RECAPTCHA_SECRET_KEY'),
         'url_verify' => env('RECAPTCHA_URL_VERIFY'),
     ],
-
 ];

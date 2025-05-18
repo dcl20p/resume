@@ -59,7 +59,7 @@ export default function Login({ status, canResetPassword }) {
                         id="password"
                         type="password"
                         name="password"
-                        value={data.password}
+                         ue={data.password}
                         className="mt-1 block w-full h-10 px-4 rounded-full border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-background/50 backdrop-blur-sm"
                         autoComplete="current-password"
                         onChange={(e) => setData('password', e.target.value)}

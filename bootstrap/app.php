@@ -20,11 +20,11 @@ return Application::configure(basePath: dirname(__DIR__))
             CacheStaticAssets::class
         ]);
 
-        $middleware->api(append: [
-            \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            SetLocale::class,
-        ]);
+        // $middleware->api(append: [
+        //     \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+        //     \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        //     SetLocale::class,
+        // ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

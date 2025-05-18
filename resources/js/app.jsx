@@ -9,11 +9,10 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from '@/i18n/config';
 import GoogleAnalytics from '@/Components/GoogleAnalytics';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
-const titleName = import.meta.env.TITLE || 'Portfolio';
+const appName = import.meta.env.VITE_APP_NAME || 'Portfolio';
 
 createInertiaApp({
-    title: (title) => `${titleName} - ${appName}`,
+    title: (title) => `${title} - ${appName}`,
     resolve: (name) => {
         const page = resolvePageComponent(`./Pages/${name}.jsx`, import.meta.glob('./Pages/**/*.jsx'));
         page.then(module => {

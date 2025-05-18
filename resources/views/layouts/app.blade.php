@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }} - @yield('title', 'Portfolio')</title>
+        {{-- <title>{{ config('app.name', 'Laravel') }} - @yield('title', 'Portfolio')</title> --}}
         <meta name="description" content="@yield('meta_description', 'Full Stack Developer with over 6 years of experience in web development. Passionate about creating modern, efficient, and user-friendly web applications.')">
         <meta name="author" content="@yield('meta_author', 'Thiều Sỹ Tùng')">
 

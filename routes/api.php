@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use Illuminate\Http\Request;
 use App\Http\Controllers\LocaleController;
+use App\Http\Controllers\Api\AnalyticsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,6 @@ use App\Http\Controllers\LocaleController;
 Route::post('contact', [ContactController::class, 'store'])->middleware('throttle:5,1');
 
 Route::get('/locale', [LocaleController::class, 'get']);
-Route::post('/locale', [LocaleController::class, 'update']); 
+Route::post('/locale', [LocaleController::class, 'update']);
+
+Route::get('/analytics', [AnalyticsController::class, 'getData']);

@@ -20,7 +20,7 @@ import {
 import { useTranslation } from 'react-i18next';
 
 export default function Authenticated({ user, header, children }) {
-    console.log('Authenticated user:', user);
+    // console.log('Authenticated user:', user);
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
     const { t, i18n } = useTranslation();
 
@@ -111,8 +111,10 @@ export default function Authenticated({ user, header, children }) {
                                             </DropdownMenuTrigger>
 
                                             <DropdownMenuContent align="end" className="z-[100]">
-                                                <DropdownMenuItem href={route('profile.edit')}>
-                                                    {t('nav.profile')}
+                                                <DropdownMenuItem asChild>
+                                                    <Link href={route('profile.edit')}>
+                                                        {t('nav.profile')}
+                                                    </Link>
                                                 </DropdownMenuItem>
                                                 <DropdownMenuItem asChild>
                                                     <form method="POST" action={route('logout')}>
@@ -211,7 +213,7 @@ export default function Authenticated({ user, header, children }) {
                     {header && (
                         <header className="glass-card border-b border-border/50">
                             <div className="container mx-auto py-4 px-4 sm:px-6 lg:px-8">
-                                <h2 className="text-xl font-semibold text-foreground">{header}</h2>
+                                <div className="text-xl font-semibold text-foreground">{header}</div>
                             </div>
                         </header>
                     )}

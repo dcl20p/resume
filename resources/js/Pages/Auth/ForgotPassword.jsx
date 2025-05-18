@@ -35,16 +35,16 @@ export default function ForgotPassword({ status }) {
             <form onSubmit={submit} className="space-y-6">
                 <div>
                     <InputLabel htmlFor="email" value={t('auth.forgot_password.email')} className="text-foreground/80" />
-                    <TextInput
-                        id="email"
-                        type="email"
-                        name="email"
-                        value={data.email}
+                <TextInput
+                    id="email"
+                    type="email"
+                    name="email"
+                    value={data.email}
                         className="mt-1 block w-full h-10 px-4 rounded-full border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-background/50 backdrop-blur-sm"
-                        isFocused={true}
-                        onChange={(e) => setData('email', e.target.value)}
-                    />
-                    <InputError message={errors.email} className="mt-2" />
+                    isFocused={true}
+                    onChange={(e) => setData('email', e.target.value)}
+                />
+                <InputError message={errors.email} className="mt-2" />
                 </div>
 
                 <div className="flex items-center justify-end">

@@ -1,4 +1,7 @@
 {
+	"resume": {
+		"title": "Trang chủ"
+	},
 	"site": {
 		"name": "Thiều Sỹ Tùng"
 	},
@@ -327,7 +330,10 @@
 		"resend_verification": "Gửi lại email xác thực",
 		"log_out": "Đăng xuất",
 		"email_reset_link": "Gửi liên kết đặt lại mật khẩu",
-		"reset_password_button": "Đặt lại mật khẩu"
+		"reset_password_button": "Đặt lại mật khẩu",
+		"failed": "Thông tin đăng nhập không chính xác.",
+		"password": "Mật khẩu không đúng.",
+		"throttle": "Quá nhiều lần đăng nhập. Vui lòng thử lại sau :seconds giây."
 	},
 	"profile": {
 		"title": "Hồ sơ",
@@ -360,21 +366,33 @@
 	"common": {
 		"save": "Lưu",
 		"saved": "Đã lưu.",
-		"cancel": "Hủy"
+		"cancel": "Hủy",
+		"loading": "Đang tải...",
+		"delete": "Xóa",
+		"edit": "Sửa",
+		"update": "Cập nhật",
+		"success": "Thành công",
+		"error": "Lỗi",
+		"warning": "Cảnh báo",
+		"info": "Thông tin"
 	},
 	"validation": {
 		"required": "Vui lòng nhập :attribute.",
-		"email": ":attribute phải là một địa chỉ email hợp lệ.",
+		"email": "Địa chỉ email không hợp lệ.",
 		"min": {
 			"string": ":attribute phải có ít nhất :min ký tự."
 		},
+		"max": {
+			"string": ":attribute không được vượt quá :max ký tự."
+		},
 		"confirmed": "Xác nhận :attribute không khớp.",
-		"unique": ":attribute đã được sử dụng.",
+		"current_password": "Mật khẩu hiện tại không đúng.",
 		"attributes": {
 			"name": "Tên",
 			"email": "Email",
 			"password": "Mật khẩu",
-			"password_confirmation": "Xác nhận mật khẩu"
+			"password_confirmation": "Xác nhận mật khẩu",
+			"current_password": "Mật khẩu hiện tại"
 		}
 	},
 	"dashboard": {
@@ -390,5 +408,27 @@
 			"countries": "Quốc gia",
 			"devices": "Thiết bị"
 		}
+	},
+	"analytics": {
+		"title": "Phân tích",
+		"total_visits": "Tổng lượt truy cập",
+		"today_visits": "Lượt truy cập hôm nay",
+		"total_page_views": "Tổng lượt xem trang",
+		"daily_stats": "Thống kê hàng ngày",
+		"visitors": "Lượt truy cập",
+		"page_views": "Lượt xem trang",
+		"user_types": "Loại người dùng",
+		"top_browsers": "Trình duyệt phổ biến",
+		"top_pages": "Trang phổ biến",
+		"top_countries": "Quốc gia phổ biến",
+		"new": "Người dùng mới",
+		"returning": "Người dùng quay lại"
+	},
+	"passwords": {
+		"sent": "Chúng tôi đã gửi email chứa liên kết đặt lại mật khẩu.",
+		"reset": "Mật khẩu của bạn đã được đặt lại.",
+		"throttled": "Vui lòng đợi trước khi thử lại.",
+		"token": "Mã đặt lại mật khẩu này không hợp lệ.",
+		"user": "Chúng tôi không thể tìm thấy người dùng với địa chỉ email này."
 	}
 }
