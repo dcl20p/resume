@@ -44,10 +44,15 @@ export default function Analytics({ auth, title }) {
                     },
                     withCredentials: true
                 });
-                setAnalyticsData(response.data);
+                
+                if (response.data.success) {
+                    setAnalyticsData(response.data.data);
+                } else {
+                    setError(response.data.message);
+                }
             } catch (err) {
                 console.error('Analytics error:', err);
-                setError(err.message);
+                setError(err.response?.data?.message || 'Failed to fetch analytics data');
             } finally {
                 setLoading(false);
             }
