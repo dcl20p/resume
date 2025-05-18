@@ -30,7 +30,7 @@ export default function ResetPassword({ token, email }) {
 
     return (
         <GuestLayout>
-            <Head title={t('auth.reset_password.title')} />
+            <Head title="Reset Password" />
 
             <form onSubmit={submit} className="space-y-6">
                 <div>

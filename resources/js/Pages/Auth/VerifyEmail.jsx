@@ -27,7 +27,7 @@ export default function VerifyEmail({ status }) {
 
     return (
         <GuestLayout>
-            <Head title={t('auth.verify_email')} />
+            <Head title="Verify Email" />
 
             <div className="mb-4 text-sm text-foreground/80">
                 {t('auth.verify_email_text')}

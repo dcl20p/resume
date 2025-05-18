@@ -11,7 +11,7 @@ export default function Edit({ auth, mustVerifyEmail, status }) {
 
     return (
         <AuthenticatedLayout user={auth.user}>
-            <Head title={t('profile.title')} />
+            <Head title="Profile" />
 
             <div className="min-h-screen bg-background">
                 <div className="sticky top-0 z-10 bg-background/80 backdrop-blur-sm border-b border-border/50">

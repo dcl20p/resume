@@ -344,7 +344,7 @@ export default function Analytics({ auth, title }) {
 
     return (
         <AuthenticatedLayout user={auth.user}>
-            <Head title={t('analytics.title')} />
+            <Head title="Analytics" />
 
             <div className="min-h-screen bg-background">
                 <div className="sticky top-0 z-10 bg-background/80 backdrop-blur-sm border-b border-border/50">

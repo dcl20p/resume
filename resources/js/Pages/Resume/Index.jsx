@@ -25,7 +25,7 @@ export default function Index() {
 
 	return (
 		<ResumeLayout>
-            <Head title={t('resume.title')} />
+            <Head title="Home" />
 			<Header />
 
 			<Hero />

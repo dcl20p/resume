@@ -30,7 +30,7 @@ export default function Register() {
 
     return (
         <GuestLayout>
-            <Head title={t('auth.register.title')} />
+            <Head title="Register" />
 
             <form onSubmit={submit} className="space-y-6">
                 <div>

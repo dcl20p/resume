@@ -326,6 +326,7 @@
 		"verify_email": "Xác thực Email",
 		"confirm_password": "Xác nhận mật khẩu",
 		"remember_me": "Ghi nhớ đăng nhập",
+		"verify_email_text": "Cảm ơn bạn đã đăng ký! Trước khi tiếp tục, vui lòng xác minh địa chỉ email của bạn bằng cách nhấp vào liên kết mà chúng tôi vừa gửi đến email của bạn. Nếu bạn không nhận được email, chúng tôi sẽ gửi cho bạn liên kết đặt lại mật khẩu.",
 		"verification_link_sent": "Một liên kết xác minh mới đã được gửi đến địa chỉ email bạn đã cung cấp khi đăng ký.",
 		"resend_verification": "Gửi lại email xác thực",
 		"log_out": "Đăng xuất",
