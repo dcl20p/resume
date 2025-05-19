@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Spatie\Analytics\Period;
 use Spatie\Analytics\Facades\Analytics;
@@ -25,12 +24,25 @@ class AnalyticsController extends Controller
 
             // Get most visited pages
             $topPages = Analytics::fetchMostVisitedPages($period, 10)
-                ->map(function ($page) {
+                ->groupBy(function ($page) {
+                    // Extract base URL without query parameters
+                    $url = parse_url($page['fullPageUrl'], PHP_URL_PATH);
+                    return $url ?: '/';
+                })
+                ->map(function ($group) {
+                    // Find first non-empty title or use 'Home - Portfolio'
+                    $title = $group->first(function ($page) {
+                        return !in_array($page['pageTitle'], ['', '(not set)']);
+                    })['pageTitle'] ?? 'Home - Portfolio';
+                    
                     return [
-                        'name' => $page['pageTitle'],
-                        'value' => $page['screenPageViews']
+                        'name' => $title,
+                        'value' => $group->sum('screenPageViews')
                     ];
-                });
+                })
+                ->values()
+                ->sortByDesc('value')
+                ->take(10);
 
             // Get top referrers
             $topReferrers = Analytics::fetchTopReferrers($period, 10)
