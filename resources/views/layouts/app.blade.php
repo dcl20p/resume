@@ -61,7 +61,7 @@
 
         <!-- Defer non-critical CSS -->
         <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="preload" fetchpriority="high" media="print" onload="this.media='all'">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="preload" as="style" fetchpriority="high" media="print" onload="this.media='all'">
 
         <!-- Scripts -->
         @routes
